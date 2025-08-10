@@ -27,3 +27,4 @@ Clone the repository to your local machine:
 ```bash
 git clone https://github.com/vortexntnu/embedded-learning-period.git
 cd embedded-learning-period
+```
