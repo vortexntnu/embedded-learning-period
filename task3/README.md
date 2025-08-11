@@ -28,7 +28,7 @@ When configured in **asynchronous mode**, it uses only two wires:
 [Download Here](https://ww1.microchip.com/downloads/aemDocuments/documents/MCU08/ProductDocuments/DataSheets/AVR128DA28-32-48-64-Data-Sheet-DS40002183.pdf)
 
 Look for:
-- The `USART1` section
+- The `USART` section
 - Baud rate calculation
 - Pin mappings for TX/RX
 - Register descriptions for control and status
@@ -40,13 +40,6 @@ Look for:
 On the AVR128DA48:
 - **USART1 TX (Transmit)** → `PC0`
 - **USART1 RX (Receive)** → `PC1`
-
-If you connect to a PC:
-- You will need a **USB-to-UART adapter** (e.g., FTDI, CP2102)
-- Connect:
-  - MCU TX → Adapter RX
-  - MCU RX → Adapter TX
-  - GND → GND
 
 ---
 
@@ -84,12 +77,6 @@ void usart1_send_char(char c) {
         // Wait for data register to be empty
     }
     USART1.TXDATAL = c;
-}
-
-void usart1_send_string(const char *str) {
-    while (*str) {
-        usart1_send_char(*str++);
-    }
 }
 
 char usart1_read_char(void) {
