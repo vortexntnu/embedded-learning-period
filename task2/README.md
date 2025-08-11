@@ -13,7 +13,7 @@ One of the most crucial skills in embedded development is learning how to **read
 The datasheet tells you how the hardware works, what registers to use, and the meaning of each bit.
 
 📄 **AVR128DA48 Datasheet**:  
-[Download Here (Microchip)](https://ww1.microchip.com/downloads/en/DeviceDoc/AVR128DB28-32-48-64-DataSheet-DS40002247A.pdf)
+[Download Here (Microchip)](https://ww1.microchip.com/downloads/aemDocuments/documents/MCU08/ProductDocuments/DataSheets/AVR128DA28-32-48-64-Data-Sheet-DS40002183.pdf)
 
 For this task, you will need to look up:
 - How to configure pins as inputs/outputs

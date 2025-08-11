@@ -25,7 +25,7 @@ When configured in **asynchronous mode**, it uses only two wires:
 ## 2. Reading the Datasheet
 
 📄 **AVR128DA48 Datasheet**:  
-[Download Here](https://ww1.microchip.com/downloads/en/DeviceDoc/AVR128DB28-32-48-64-DataSheet-DS40002247A.pdf)
+[Download Here](https://ww1.microchip.com/downloads/aemDocuments/documents/MCU08/ProductDocuments/DataSheets/AVR128DA28-32-48-64-Data-Sheet-DS40002183.pdf)
 
 Look for:
 - The `USART1` section
