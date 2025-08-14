@@ -27,6 +27,9 @@ When configured in **asynchronous mode**, it uses only two wires:
 📄 **AVR128DA48 Datasheet**:  
 [Download Here](https://ww1.microchip.com/downloads/aemDocuments/documents/MCU08/ProductDocuments/DataSheets/AVR128DA28-32-48-64-Data-Sheet-DS40002183.pdf)
 
+📄 **AVR128DB48 Datasheet**:  
+[Download Here (Microchip)](https://ww1.microchip.com/downloads/aemDocuments/documents/MCU08/ProductDocuments/DataSheets/AVR128DB28-32-48-64-DataSheet-DS40002247.pdf)
+
 Look for:
 - The `USART` section
 - Baud rate calculation
@@ -41,6 +44,9 @@ On the AVR128DA48:
 - **USART1 TX (Transmit)** → `PC0`
 - **USART1 RX (Receive)** → `PC1`
 
+On the AVR128DA48:
+- **USART3 TX (Transmit)** → `PB0`
+- **USART3 RX (Receive)** → `PB1`
 ---
 
 ## 4. Steps to Configure USART1
@@ -54,12 +60,15 @@ On the AVR128DA48:
 
 ## 5. Example Initialization Code
 
+
 ```c
 #include <avr/io.h>
 #include <avr/interrupt.h>
 
 #define F_CPU 4000000UL // 4 MHz clock
 #define USART1_BAUD_RATE(BAUD_RATE)     ((float)(64 * 4000000 / (16 * (float)BAUD_RATE)) + 0.5)
+
+// Note: for the AVR128DB48 use USART3
 
 void usart1_init(void) {
     // Set baud rate

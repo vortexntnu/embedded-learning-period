@@ -19,6 +19,10 @@ On the **AVR128DA48** development board:
 - The user LED is connected to **PC6**  
   (Port C, Pin 6)
 
+On the **AVR128DB48** development board:
+- The user LED is connected to **PB3**  
+  (Port B, Pin 3)
+
 You will use this information to set the correct register bits for output.
 
 ---

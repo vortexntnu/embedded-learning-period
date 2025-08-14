@@ -15,6 +15,9 @@ The datasheet tells you how the hardware works, what registers to use, and the m
 📄 **AVR128DA48 Datasheet**:  
 [Download Here (Microchip)](https://ww1.microchip.com/downloads/aemDocuments/documents/MCU08/ProductDocuments/DataSheets/AVR128DA28-32-48-64-Data-Sheet-DS40002183.pdf)
 
+📄 **AVR128DB48 Datasheet**:  
+[Download Here (Microchip)](https://ww1.microchip.com/downloads/aemDocuments/documents/MCU08/ProductDocuments/DataSheets/AVR128DB28-32-48-64-DataSheet-DS40002247.pdf)
+
 For this task, you will need to look up:
 - How to configure pins as inputs/outputs
 - How to enable pull-up resistors
@@ -24,9 +27,13 @@ For this task, you will need to look up:
 
 ## 2. Hardware Connections
 
+**AVR128DA48**:  
 - **LED**: PC6 (Port C, Pin 6) – Output
 - **Button**: PC7 (Port C, Pin 7) – Input
 
+**AVR128DB48**:  
+- **LED**: PB2 (Port B, Pin 2) – Output
+- **Button**: PB3 (Port B, Pin 3) – Input
 ---
 
 ## 3. What Needs to Be Configured
