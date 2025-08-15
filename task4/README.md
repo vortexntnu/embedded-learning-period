@@ -117,9 +117,8 @@ Your goal is to **create a project that uses multiple peripherals** and is split
 
 ## 4. Example Project Ideas
 - **USART + Timer**: Send a message over USART every second.
-- **I²C + ADC**: Read a sensor value using ADC and display it on an I²C LCD.
-- **SPI + PWM**: Control LED brightness over SPI commands.
-- **USART + PWM**: Adjust a PWM duty cycle from commands sent via a serial terminal.
+- **USART + PWM**: Adjust a PWM duty cycle from commands sent via a serial terminal. 
+- **I²C + ENCODER**: Read a sensor value using I²C (**HARD**)
 
 ---
 
