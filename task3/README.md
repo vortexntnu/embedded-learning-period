@@ -66,7 +66,7 @@ On the AVR128DA48:
 #include <avr/interrupt.h>
 
 #define F_CPU 4000000UL // 4 MHz clock
-#define USART1_BAUD_RATE(BAUD_RATE)     ((float)(64 * 4000000 / (16 * (float)BAUD_RATE)) + 0.5)
+#define USART1_BAUD_RATE(BAUD_RATE)     ((float)(64 * 4000000 / (16 * (float)BAUD_RATE)) + 0.5) 
 
 // Note: for the AVR128DB48 use USART3
 
@@ -75,7 +75,6 @@ void usart1_init(void) {
     USART1.BAUD = (uint16_t)usart1_BAUD_RATE(9600);
 
     // Enable TX and RX
-    USART1.CTRLB |= USART_TXEN_bm | USART_RXEN_bm;
 
     // Optional: Enable RX Complete Interrupt
     // USART1.CTRLA |= USART_RXCIE_bm;
@@ -120,10 +119,10 @@ int main(void) {
 
 ## 7. Using a Serial Monitor
 
-1. Connect your USB-to-UART adapter to your PC.
-2. Open a terminal program (e.g., PuTTY, Tera Term, Arduino Serial Monitor).
-3. Select the COM port for your adapter.
-4. Set the baud rate to match your configuration (e.g., **9600** bps).
+1. Open MPLAB Data Visualizer
+2. Select the COM port for your adapter.
+3. Configure the baud rate to **9600**
+
 
 ---
 
