@@ -42,9 +42,18 @@ Example `usart.h`:
 
 #include <stdint.h>  // for uint8_t
 
+#ifdef __cplusplus
+extern "C"{ // Used to allow C++ compatability
+#endif
+
+
 void usart_init(void);
 void usart_send_byte(uint8_t byte);
 void usart_send_string(const char *str);
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif
 ```
@@ -105,7 +114,6 @@ Your goal is to **create a project that uses multiple peripherals** and is split
 1. Must use **serial communication**:
    - USART
    - I²C
-   - or SPI
 2. Must use **at least one other peripheral**, for example:
    - Timer
    - ADC
