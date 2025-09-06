@@ -111,7 +111,7 @@ int main(void) {
 Your goal is to **create a project that uses multiple peripherals** and is split into multiple source/header files.
 
 ### **Mandatory:**
-1. Must use **serial communication**:
+1. Must use at least one **serial communication** peripheral:
    - USART
    - I²C
 2. Must use **at least one other peripheral**, for example:
