@@ -41,8 +41,8 @@ Look for:
 ## 3. Hardware Connections
 
 On the AVR128DA48:
-- **USART1 TX (Transmit)** → `PC0`
-- **USART1 RX (Receive)** → `PC1`
+- **USART1 TX (Transmit)** → `PC1`
+- **USART1 RX (Receive)** → `PC0`
 
 On the AVR128DA48:
 - **USART3 TX (Transmit)** → `PB0`
