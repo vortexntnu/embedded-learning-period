@@ -1,0 +1,5 @@
+# ninja log v7
+2	326	1757500681170526898	CMakeFiles/task1_default_default_XC8_compile.dir/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task1/main.c.o	e7b289e81e508178
+326	362	1757500681494529622	/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task1/out/task1/default.elf	5c5d98a543f69351
+1	117	1757500795173572299	CMakeFiles/task1_default_default_XC8_compile.dir/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task1/main.c.o	e7b289e81e508178
+117	129	1757500795289573446	/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task1/out/task1/default.elf	5c5d98a543f69351

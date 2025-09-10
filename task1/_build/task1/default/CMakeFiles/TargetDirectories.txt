@@ -1,0 +1,4 @@
+/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task1/_build/task1/default/CMakeFiles/task1_default_default_XC8_compile.dir
+/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task1/_build/task1/default/CMakeFiles/task1_default_image_UdKNljxY.dir
+/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task1/_build/task1/default/CMakeFiles/edit_cache.dir
+/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task1/_build/task1/default/CMakeFiles/rebuild_cache.dir
