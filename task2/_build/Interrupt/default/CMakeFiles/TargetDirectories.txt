@@ -1,0 +1,4 @@
+/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task2/_build/Interrupt/default/CMakeFiles/Interrupt_default_default_AVR_GCC_compile.dir
+/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task2/_build/Interrupt/default/CMakeFiles/Interrupt_default_image_fdugTixG.dir
+/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task2/_build/Interrupt/default/CMakeFiles/edit_cache.dir
+/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task2/_build/Interrupt/default/CMakeFiles/rebuild_cache.dir

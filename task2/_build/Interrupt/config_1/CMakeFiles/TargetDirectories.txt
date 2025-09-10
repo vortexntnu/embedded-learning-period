@@ -1,0 +1,4 @@
+/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task2/_build/Interrupt/config_1/CMakeFiles/Interrupt_config_1_config_1_toolchain_compile.dir
+/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task2/_build/Interrupt/config_1/CMakeFiles/Interrupt_config_1_image_zsdIyys_.dir
+/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task2/_build/Interrupt/config_1/CMakeFiles/edit_cache.dir
+/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task2/_build/Interrupt/config_1/CMakeFiles/rebuild_cache.dir

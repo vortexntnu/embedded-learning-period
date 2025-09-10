@@ -1,0 +1,131 @@
+{
+    "version": "1.6",
+    "configurations": [
+        {
+            "name": "default",
+            "id": "",
+            "device": "AVR128DA48",
+            "imageType": "application",
+            "imagePath": "./out/Interrupt/default.elf",
+            "toolProperties": "default-tool-base",
+            "tool": "PKOB nano",
+            "packs": [
+                {
+                    "name": "AVR-Dx_DFP",
+                    "vendor": "Microchip",
+                    "version": "2.7.321"
+                }
+            ],
+            "fileSet": "default",
+            "toolchain": "default-AVR-GCC",
+            "preBuildSteps": [],
+            "postBuildSteps": []
+        },
+        {
+            "name": "CoolConfig",
+            "id": "",
+            "device": "ATSAME51J20A",
+            "imageType": "application",
+            "imagePath": "./out/Interrupt/config_1.elf",
+            "packs": [
+                {
+                    "name": "SAME51_DFP",
+                    "vendor": "Microchip",
+                    "version": "3.8.253"
+                },
+                {
+                    "name": "CMSIS",
+                    "vendor": "ARM",
+                    "version": "6.2.0"
+                }
+            ],
+            "fileSet": "config_1_files",
+            "toolchain": "config_1_toolchain",
+            "preBuildSteps": [],
+            "postBuildSteps": []
+        }
+    ],
+    "propertyGroups": [
+        {
+            "name": "config_1_toolchain",
+            "type": "toolchain",
+            "provider": "microchip.toolchains:xc8@3.10",
+            "properties": {
+                "linker.generate-map-file": true,
+                "compiler.default-char-type": false,
+                "compiler.default-bitfield-type": false,
+                "compiler.garbage-collect-functions": false,
+                "compiler.garbage-collect-data": false,
+                "compiler.pack-struct": false,
+                "compiler.short-enums": false,
+                "compiler.additional-warnings": false,
+                "compiler++.default-char-type": false,
+                "compiler++.default-bitfield-type": false,
+                "compiler++.garbage-collect-functions": false,
+                "compiler++.garbage-collect-data": false,
+                "compiler++.pack-struct": false,
+                "compiler++.short-enums": false,
+                "compiler++.additional-warnings": false,
+                "linker.remove-unused-sections": false
+            }
+        },
+        {
+            "name": "default-AVR-GCC",
+            "type": "toolchain",
+            "provider": "microchip.toolchains:xc8@3.10",
+            "properties": {
+                "linker.generate-map-file": true,
+                "compiler.default-char-type": false,
+                "compiler.default-bitfield-type": false,
+                "compiler.garbage-collect-functions": false,
+                "compiler.garbage-collect-data": false,
+                "compiler.pack-struct": false,
+                "compiler.short-enums": false,
+                "compiler.additional-warnings": false,
+                "compiler++.default-char-type": false,
+                "compiler++.default-bitfield-type": false,
+                "compiler++.garbage-collect-functions": false,
+                "compiler++.garbage-collect-data": false,
+                "compiler++.pack-struct": false,
+                "compiler++.short-enums": false,
+                "compiler++.additional-warnings": false,
+                "linker.remove-unused-sections": false
+            }
+        },
+        {
+            "name": "default-tool-base",
+            "type": "tool",
+            "properties": {}
+        },
+        {
+            "name": "default-tool-base",
+            "type": "tool",
+            "properties": {}
+        },
+        {
+            "name": "default-tool-base",
+            "type": "tool",
+            "properties": {}
+        }
+    ],
+    "fileSets": [
+        {
+            "name": "default",
+            "files": [
+                {
+                    "include": "**/*",
+                    "exclude": "**/(_build|out|cmake|.vscode)/**/*"
+                }
+            ]
+        },
+        {
+            "name": "config_1_files",
+            "files": [
+                {
+                    "include": "**/*",
+                    "exclude": "**/(_build|out|cmake|.vscode)/**/*"
+                }
+            ]
+        }
+    ]
+}

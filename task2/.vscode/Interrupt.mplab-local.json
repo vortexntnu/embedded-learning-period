@@ -1,0 +1,12 @@
+{
+    "configurations": [
+        {
+            "reference": "default",
+            "toolSerial": "MCHP3360023000003362"
+        },
+        {
+            "reference": "CoolConfig",
+            "toolSerial": "MCHP3280041800002874"
+        }
+    ]
+}
