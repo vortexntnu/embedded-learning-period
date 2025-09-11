@@ -59,12 +59,21 @@ void eic_init(void) {
     }
 
     // Step 2: Configure PA15 as input with pull-up
-    PORT_REGS->GROUP[0].PORT_DIRCLR = (1 << 15);       // input
-    PORT_REGS->GROUP[0].PORT_PINCFG[15] = PORT_PINCFG_PULLEN | PORT_PINCFG_PMUXEN;
-    PORT_REGS->GROUP[0].PORT_OUTSET = (1 << 15);       // enable pull-up
+
+    PORT_REGS->GROUP[1].PORT_OUT = 0x80000U;
+    PORT_REGS->GROUP[1].PORT_PINCFG[19] = 0x7U;
+
+    PORT_REGS->GROUP[1].PORT_PMUX[9] = 0x0U;
+
+
+    PORT_REGS->GROUP[2].PORT_DIR = 0x20U;
+    PORT_REGS->GROUP[2].PORT_PINCFG[5] = 0x0U;
+
+    PORT_REGS->GROUP[2].PORT_PMUX[2] = 0x0U;
+
+
 
     // Step 3: Connect PA15 to EIC channel 15 (check datasheet for mapping)
-    PORT_REGS->GROUP[0].PMUX[15 >> 1] = MUX_PA15A_EIC_EXTINT15;
 
     // Step 4: Configure EIC for falling edge detection
     EIC_REGS->EIC_CTRLA |= (uint8_t)EIC_CTRLA_SWRST_Msk;
@@ -82,7 +91,7 @@ void eic_init(void) {
     EIC_REGS->EIC_CONFIG[0] =  EIC_CONFIG_SENSE0_NONE  |
                               EIC_CONFIG_SENSE1_NONE  |
                               EIC_CONFIG_SENSE2_NONE  |
-                              EIC_CONFIG_SENSE3_RISE  |
+                              EIC_CONFIG_SENSE3_NONE  |
                               EIC_CONFIG_SENSE4_NONE  |
                               EIC_CONFIG_SENSE5_NONE  |
                               EIC_CONFIG_SENSE6_NONE  |
@@ -96,7 +105,7 @@ void eic_init(void) {
          |  EIC_CONFIG_SENSE4_NONE  
          |  EIC_CONFIG_SENSE5_NONE  
          |  EIC_CONFIG_SENSE6_NONE  
-         |  EIC_CONFIG_SENSE7_NONE   ;
+         |  EIC_CONFIG_SENSE7_RISE   ;
 
     /* External Interrupt enable*/
     EIC_REGS->EIC_INTENSET = 0x8U;
