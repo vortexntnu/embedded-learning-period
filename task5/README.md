@@ -86,7 +86,7 @@ Your task:
 
 void delay(volatile uint32_t count) {
     while (count--) {
-        __asm__("nop"); // do nothing (simple delay loop)
+        __NOP(); // No Operation Instruction
     }
 }
 
