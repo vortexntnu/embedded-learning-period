@@ -109,7 +109,7 @@ void eic_init(void) {
     NVIC_EnableIRQ(EIC_IRQn);
 }
 
-void EIC_15_Handler(void) { // Important the function name has to match 
+void __attribute__((used)) EIC_15_Handler(void) { // Important the function name has to match 
     // Clear interrupt flag
     EIC_REGS->INTFLAG = (1 << 15);
 
