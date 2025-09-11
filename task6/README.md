@@ -99,6 +99,8 @@ void CLOCK_Initialize(void) {
         /* Wait for synchronization */
     }
 
+    MCLK_REGS->MCLK_AHBMASK |= (1 << 8);  // CAN0
+
 }
 
 ```
