@@ -130,3 +130,8 @@ int main(void) {
 }
 
 ```
+---
+## Optional Challenges
+
+- Use Event Systems instead of EIC to use button interrupt without CPU 
+
