@@ -118,13 +118,6 @@ void eic_init(void) {
     NVIC_EnableIRQ(EIC_IRQn);
 }
 
-void __attribute__((used)) EIC_15_Handler(void) { // Important the function name has to match 
-    // Clear interrupt flag
-    EIC_REGS->INTFLAG = (1 << 15);
-
-    // Toggle LED
-    PORT_REGS->GROUP[0].PORT_OUTTGL = (1 << 5);
-}
 
 int main(void) {
     // Configure LED pin PA5 as output
@@ -138,6 +131,13 @@ int main(void) {
     }
 }
 
+void __attribute__((used)) EIC_15_Handler(void) { // Important the function name has to match 
+    // Clear interrupt flag
+    EIC_REGS->INTFLAG = (1 << 15);
+
+    // Toggle LED
+    PORT_REGS->GROUP[0].PORT_OUTTGL = (1 << 5);
+}
 ```
 ---
 ## Optional Challenges
