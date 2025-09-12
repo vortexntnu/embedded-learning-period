@@ -21,7 +21,7 @@ Using the EIC is more efficient than constantly polling a pin in your main loop.
 
 ---
 
-## 2. Example: Configure Button on PB15, LED on PA5
+## 2. Example: Configure Button on PB19, LED on PC5
 
 For this example:
 - **PB19** = button input (connected to EIC channel)  
