@@ -21,11 +21,11 @@ Using the EIC is more efficient than constantly polling a pin in your main loop.
 
 ---
 
-## 2. Example: Configure Button on PA15, LED on PA5
+## 2. Example: Configure Button on PB15, LED on PA5
 
 For this example:
-- **PA15** = button input (connected to EIC channel)  
-- **PA5** = LED output  
+- **PB19** = button input (connected to EIC channel)  
+- **PC5** = LED output  
 
 Check your development board’s schematics/datasheet to confirm which pins are available for EIC input.
 
@@ -48,7 +48,6 @@ Check your development board’s schematics/datasheet to confirm which pins are 
 #include "sam.h"
 
 void eic_init(void) {
-    // Step 1: Enable the EIC clock (GCLK0 by default)
 
     /* Selection of the Generator and write Lock for EIC */
     GCLK_REGS->GCLK_PCHCTRL[2] = GCLK_PCHCTRL_GEN(0x0UL)  | GCLK_PCHCTRL_CHEN_Msk;
@@ -58,8 +57,7 @@ void eic_init(void) {
         /* Wait for synchronization */
     }
 
-    // Step 2: Configure PA15 as input with pull-up
-
+    // Enable the pullup resistors for PB19
     PORT_REGS->GROUP[1].PORT_OUT = 0x80000U;
     PORT_REGS->GROUP[1].PORT_PINCFG[19] = 0x7U;
 
@@ -73,9 +71,7 @@ void eic_init(void) {
 
 
 
-    // Step 3: Connect PA15 to EIC channel 15 (check datasheet for mapping)
 
-    // Step 4: Configure EIC for falling edge detection
     EIC_REGS->EIC_CTRLA |= (uint8_t)EIC_CTRLA_SWRST_Msk;
 
     while((EIC_REGS->EIC_SYNCBUSY & EIC_SYNCBUSY_SWRST_Msk) == EIC_SYNCBUSY_SWRST_Msk)
@@ -120,9 +116,6 @@ void eic_init(void) {
 
 
 int main(void) {
-    // Configure LED pin PA5 as output
-    PORT_REGS->GROUP[0].PORT_DIR |= (1 << 5);
-
     // Initialize EIC
     eic_init();
 
