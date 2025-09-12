@@ -49,6 +49,15 @@ Notice how the syntax changes:
 * **AVR** uses simple registers like `PORTC.DIR`.
 * **SAM** uses `PORT_REGS->GROUP[x]` with array indexing for different port groups.
 
+The example below shows how the index decides which PORT is used
+
+```c
+PORT_REGS->GROUP[0].PORT_OUTSET = (1 << 5); // PA5
+PORT_REGS->GROUP[1].PORT_OUTSET = (1 << 3); // PB3
+PORT_REGS->GROUP[2].PORT_OUTSET = (1 << 30); // PC30
+
+```
+
 This difference reflects the increased **complexity and flexibility** of ARM-based MCUs.
 
 ---
