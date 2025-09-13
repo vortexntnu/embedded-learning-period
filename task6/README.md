@@ -9,6 +9,8 @@ In this task, you will learn how to:
 - Configure the Generic Clock Controller (GCLK)
 - Route the clock to a peripheral (example: Timer/Counter)
 
+Since we in task7 will use EIC, I recommend Configuring the clock for EIC (External interrupt controller)
+
 ---
 
 ## 1. Why Clocks Matter
