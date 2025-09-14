@@ -21,11 +21,11 @@ Using the EIC is more efficient than constantly polling a pin in your main loop.
 
 ---
 
-## 2. Example: Configure Button on PB19, LED on PC5
+## 2. Example: Configure Button on PA14, LED on PA14
 
 For this example:
-- **PB19** = button input (connected to EIC channel)  
-- **PC5** = LED output  
+- **PA15** = button input (connected to EIC channel)  
+- **PA14** = LED output  
 
 Check your development board’s schematics/datasheet to confirm which pins are available for EIC input.
 
