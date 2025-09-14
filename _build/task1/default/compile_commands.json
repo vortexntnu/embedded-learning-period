@@ -1,0 +1,26 @@
+[
+{
+  "directory": "/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/_build/task1/default",
+  "command": "/opt/microchip/xc8/v3.10/bin/xc8-cc -DDEBUG -DXPRJ_default=default -D__AVR128DA48__ -D__DEBUG=1 -c -mcpu=AVR128DA48 -gdwarf-2 -x c -mdfp=/home/vikingur/.mchp_packs/Microchip/AVR-Dx_DFP/2.7.321/xc8 -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -funsigned-char -funsigned-bitfields -Wall -gdwarf-3 -mno-const-data-in-progmem -o CMakeFiles/task1_default_default_XC8_compile.dir/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task1/main.c.o -c /home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task1/main.c",
+  "file": "/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task1/main.c",
+  "output": "/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/_build/task1/default/CMakeFiles/task1_default_default_XC8_compile.dir/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task1/main.c.o"
+},
+{
+  "directory": "/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/_build/task1/default",
+  "command": "/opt/microchip/xc8/v3.10/bin/xc8-cc -DDEBUG -DXPRJ_default=default -D__AVR128DA48__ -D__DEBUG=1 -c -mcpu=AVR128DA48 -gdwarf-2 -x c -mdfp=/home/vikingur/.mchp_packs/Microchip/AVR-Dx_DFP/2.7.321/xc8 -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -funsigned-char -funsigned-bitfields -Wall -gdwarf-3 -mno-const-data-in-progmem -o CMakeFiles/task1_default_default_XC8_compile.dir/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task2/main.c.o -c /home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task2/main.c",
+  "file": "/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task2/main.c",
+  "output": "/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/_build/task1/default/CMakeFiles/task1_default_default_XC8_compile.dir/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task2/main.c.o"
+},
+{
+  "directory": "/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/_build/task1/default",
+  "command": "/opt/microchip/xc8/v3.10/bin/xc8-cc -DDEBUG -DXPRJ_default=default -D__AVR128DA48__ -D__DEBUG=1 -c -mcpu=AVR128DA48 -gdwarf-2 -x c -mdfp=/home/vikingur/.mchp_packs/Microchip/AVR-Dx_DFP/2.7.321/xc8 -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -funsigned-char -funsigned-bitfields -Wall -gdwarf-3 -mno-const-data-in-progmem -o CMakeFiles/task1_default_default_XC8_compile.dir/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task5/main.c.o -c /home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task5/main.c",
+  "file": "/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task5/main.c",
+  "output": "/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/_build/task1/default/CMakeFiles/task1_default_default_XC8_compile.dir/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task5/main.c.o"
+},
+{
+  "directory": "/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/_build/task1/default",
+  "command": "/opt/microchip/xc8/v3.10/bin/xc8-cc -DDEBUG -DXPRJ_default=default -D__AVR128DA48__ -D__DEBUG=1 -c -mcpu=AVR128DA48 -gdwarf-2 -x c -mdfp=/home/vikingur/.mchp_packs/Microchip/AVR-Dx_DFP/2.7.321/xc8 -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -funsigned-char -funsigned-bitfields -Wall -gdwarf-3 -mno-const-data-in-progmem -o CMakeFiles/task1_default_default_XC8_compile.dir/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task6/clock.c.o -c /home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task6/clock.c",
+  "file": "/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task6/clock.c",
+  "output": "/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/_build/task1/default/CMakeFiles/task1_default_default_XC8_compile.dir/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task6/clock.c.o"
+}
+]

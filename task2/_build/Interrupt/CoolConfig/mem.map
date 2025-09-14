@@ -1,9 +1,9 @@
 Archive member included to satisfy reference by file (symbol)
 
 /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libpic32c.a(data_init.o)
-                              /tmp/ccO210FF.o (__pic32c_data_initialization)
+                              /tmp/cczBSlBJ.o (__pic32c_data_initialization)
 /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libg-musl.a(__libc_start_main.o)
-                              /tmp/ccO210FF.o (__libc_init_array)
+                              /tmp/cczBSlBJ.o (__libc_init_array)
 /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libg-musl.a(libc.o)
                               /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libg-musl.a(__libc_start_main.o) (__progname_full)
 /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libg-musl.a(__environ.o)
@@ -20,23 +20,23 @@ section                    address  length [bytes]      (dec)  Description
 -------                 ----------  -------------------------  -----------
 .vectors                         0          0x260         608   
 .text                        0x260           0x20          32  App's exec code 
-.text                        0x280          0x1c0         448  App's exec code 
-.text.Reset_Handler          0x440           0xa0         160   
-.dinit                       0x4e0           0x70         112   
-.text.__libc_start_init      0x550           0x5c          92   
-.text                        0x5ac           0x40          64  App's exec code 
-.text.__pic32c_data_ini      0x5ec           0x38          56   
-.text                        0x624           0x28          40  App's exec code 
-.text.__dinit_copy           0x64c           0x1e          30   
-.text.Dummy_Handler          0x66a            0x2           2   
-.rodata                      0x66c           0x14          20  Read-only const 
-.text.__dinit_clear          0x680           0x12          18   
-.text.__dummy_decompres      0x692            0x4           4   
-.text.__dummy_init_tls       0x696            0x2           2   
-.text.__dummy                0x698            0x2           2   
-      Total ROM used  :       0x69a        1690  0.2% of 0x100000
+.text                        0x280          0x3c0         960  App's exec code 
+.text.Reset_Handler          0x640           0xa0         160   
+.dinit                       0x6e0           0x70         112   
+.text.__libc_start_init      0x750           0x5c          92   
+.text                        0x7ac           0x40          64  App's exec code 
+.text.__pic32c_data_ini      0x7ec           0x38          56   
+.text                        0x824           0x28          40  App's exec code 
+.text.__dinit_copy           0x84c           0x1e          30   
+.text.Dummy_Handler          0x86a            0x2           2   
+.rodata                      0x86c           0x14          20  Read-only const 
+.text.__dinit_clear          0x880           0x12          18   
+.text.__dummy_decompres      0x892            0x4           4   
+.text.__dummy_init_tls       0x896            0x2           2   
+.text.__dummy                0x898            0x2           2   
+      Total ROM used  :       0x89a        2202  0.2% of 0x100000
         --------------------------------------------------------------------------
-         Total Program Memory used  :       0x69a        1690  0.2% of 0x100000
+         Total Program Memory used  :       0x89a        2202  0.2% of 0x100000
         --------------------------------------------------------------------------
 
 
@@ -68,8 +68,8 @@ Microchip PIC32 Memory-Usage Report By Module
 
         text        data         bss         dec         hex    basename                   filename
 --------------------------------------------------------------------------------
-         810           0           1         811         32b    ccO210FF.o             /tmp/ccO210FF.o
-         448           0           0         448         1c0    main.c.o               CMakeFiles/Interrupt_CoolConfig_default_XC32_compile.dir/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task2/main.c.o
+         960           0           0         960         3c0    main.c.o               CMakeFiles/Interrupt_CoolConfig_default_XC32_compile.dir/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task2/main.c.o
+         810           0           1         811         32b    cczBSlBJ.o             /tmp/cczBSlBJ.o
          112           0           0         112          70    data_init              data_init
           72           4          28         104          68    crtbegin.o             /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v7e-m+fp/hard/crtbegin.o
           94           0           0          94          5e    __libc_start_main.o    libg-musl.a
@@ -82,7 +82,7 @@ Microchip PIC32 Memory-Usage Report By Module
            0           4           0           4           4    crtend.o               /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v7e-m+fp/hard/crtend.o
            0           0           4           4           4    __environ.o            libg-musl.a
 --------------------------------------------------------------------------------
-        1690           8         117        1815         717    /home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task2/out/Interrupt/CoolConfig.elf
+        2202           8         117        2327         917    /home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task2/out/Interrupt/CoolConfig.elf
 
 
 Discarded input sections
@@ -140,7 +140,7 @@ LOAD /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v7e-m+fp
                 0x0000000000000001                __MPLAB_DEBUG = 0x1
                 0x0000000000000001                __DEBUG = 0x1
 LOAD CMakeFiles/Interrupt_CoolConfig_default_XC32_compile.dir/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task2/main.c.o
-LOAD /tmp/ccO210FF.o
+LOAD /tmp/cczBSlBJ.o
 START GROUP
 LOAD /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libpic32c.a
 LOAD /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libc-size-musl.a
@@ -172,7 +172,7 @@ LOAD /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v7e-m+fp
                 0x0000000000000000                _sfixed = .
  *(.vectors .vectors.* .vectors_default .vectors_default.*)
  .vectors.default
-                0x0000000000000000      0x260 /tmp/ccO210FF.o
+                0x0000000000000000      0x260 /tmp/cczBSlBJ.o
                 0x0000000000000000                exception_table
  *(.isr_vector)
  *(.reset*)
@@ -261,7 +261,7 @@ LOAD stack
  .ARM.attributes
                 0x0000000000000052       0x34 CMakeFiles/Interrupt_CoolConfig_default_XC32_compile.dir/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task2/main.c.o
  .ARM.attributes
-                0x0000000000000086       0x34 /tmp/ccO210FF.o
+                0x0000000000000086       0x34 /tmp/cczBSlBJ.o
  .ARM.attributes
                 0x00000000000000ba       0x34 /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libpic32c.a(data_init.o)
  .ARM.attributes
@@ -283,7 +283,7 @@ LOAD stack
  .comment       0x0000000000000000       0x2b /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v7e-m+fp/hard/crtbegin.o
                                          0x2c (size before relaxing)
  .comment       0x000000000000002b       0x2c CMakeFiles/Interrupt_CoolConfig_default_XC32_compile.dir/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task2/main.c.o
- .comment       0x000000000000002b       0x2c /tmp/ccO210FF.o
+ .comment       0x000000000000002b       0x2c /tmp/cczBSlBJ.o
  .comment       0x000000000000002b       0x2c /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libpic32c.a(data_init.o)
  .comment       0x000000000000002b       0x2c /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libg-musl.a(__libc_start_main.o)
  .comment       0x000000000000002b       0x2c /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libg-musl.a(libc.o)
@@ -292,37 +292,37 @@ LOAD stack
  .comment       0x000000000000002b       0x2c /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libpic32c.a(pic32_data_init_clear.o)
  .comment       0x000000000000002b       0x2c /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libpic32c.a(pic32_data_init_copy.o)
 
-.debug_info     0x0000000000000000     0x22f5
- .debug_info    0x0000000000000000      0xc30 CMakeFiles/Interrupt_CoolConfig_default_XC32_compile.dir/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task2/main.c.o
- .debug_info    0x0000000000000c30      0xfd6 /tmp/ccO210FF.o
- .debug_info    0x0000000000001c06       0x68 /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libpic32c.a(data_init.o)
- .debug_info    0x0000000000001c6e      0x2fb /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libg-musl.a(__libc_start_main.o)
- .debug_info    0x0000000000001f69      0x276 /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libg-musl.a(libc.o)
- .debug_info    0x00000000000021df       0x97 /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libg-musl.a(__environ.o)
- .debug_info    0x0000000000002276       0x3f /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libpic32c.a(pic32_data_init_clear.o)
- .debug_info    0x00000000000022b5       0x40 /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libpic32c.a(pic32_data_init_copy.o)
+.debug_info     0x0000000000000000     0x2638
+ .debug_info    0x0000000000000000      0xf73 CMakeFiles/Interrupt_CoolConfig_default_XC32_compile.dir/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task2/main.c.o
+ .debug_info    0x0000000000000f73      0xfd6 /tmp/cczBSlBJ.o
+ .debug_info    0x0000000000001f49       0x68 /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libpic32c.a(data_init.o)
+ .debug_info    0x0000000000001fb1      0x2fb /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libg-musl.a(__libc_start_main.o)
+ .debug_info    0x00000000000022ac      0x276 /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libg-musl.a(libc.o)
+ .debug_info    0x0000000000002522       0x97 /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libg-musl.a(__environ.o)
+ .debug_info    0x00000000000025b9       0x3f /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libpic32c.a(pic32_data_init_clear.o)
+ .debug_info    0x00000000000025f8       0x40 /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libpic32c.a(pic32_data_init_copy.o)
 
-.debug_abbrev   0x0000000000000000      0x6fd
- .debug_abbrev  0x0000000000000000      0x1d6 CMakeFiles/Interrupt_CoolConfig_default_XC32_compile.dir/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task2/main.c.o
- .debug_abbrev  0x00000000000001d6      0x21e /tmp/ccO210FF.o
- .debug_abbrev  0x00000000000003f4       0x44 /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libpic32c.a(data_init.o)
- .debug_abbrev  0x0000000000000438      0x133 /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libg-musl.a(__libc_start_main.o)
- .debug_abbrev  0x000000000000056b       0xd4 /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libg-musl.a(libc.o)
- .debug_abbrev  0x000000000000063f       0x62 /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libg-musl.a(__environ.o)
- .debug_abbrev  0x00000000000006a1       0x2e /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libpic32c.a(pic32_data_init_clear.o)
- .debug_abbrev  0x00000000000006cf       0x2e /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libpic32c.a(pic32_data_init_copy.o)
+.debug_abbrev   0x0000000000000000      0x748
+ .debug_abbrev  0x0000000000000000      0x221 CMakeFiles/Interrupt_CoolConfig_default_XC32_compile.dir/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task2/main.c.o
+ .debug_abbrev  0x0000000000000221      0x21e /tmp/cczBSlBJ.o
+ .debug_abbrev  0x000000000000043f       0x44 /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libpic32c.a(data_init.o)
+ .debug_abbrev  0x0000000000000483      0x133 /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libg-musl.a(__libc_start_main.o)
+ .debug_abbrev  0x00000000000005b6       0xd4 /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libg-musl.a(libc.o)
+ .debug_abbrev  0x000000000000068a       0x62 /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libg-musl.a(__environ.o)
+ .debug_abbrev  0x00000000000006ec       0x2e /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libpic32c.a(pic32_data_init_clear.o)
+ .debug_abbrev  0x000000000000071a       0x2e /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libpic32c.a(pic32_data_init_copy.o)
 
-.debug_loc      0x0000000000000000      0x299
- .debug_loc     0x0000000000000000      0x220 CMakeFiles/Interrupt_CoolConfig_default_XC32_compile.dir/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task2/main.c.o
- .debug_loc     0x0000000000000220       0x14 /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libpic32c.a(data_init.o)
- .debug_loc     0x0000000000000234       0x51 /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libg-musl.a(__libc_start_main.o)
- .debug_loc     0x0000000000000285       0x14 /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libpic32c.a(pic32_data_init_copy.o)
+.debug_loc      0x0000000000000000      0x461
+ .debug_loc     0x0000000000000000      0x3e8 CMakeFiles/Interrupt_CoolConfig_default_XC32_compile.dir/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task2/main.c.o
+ .debug_loc     0x00000000000003e8       0x14 /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libpic32c.a(data_init.o)
+ .debug_loc     0x00000000000003fc       0x51 /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libg-musl.a(__libc_start_main.o)
+ .debug_loc     0x000000000000044d       0x14 /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libpic32c.a(pic32_data_init_copy.o)
 
 .debug_aranges  0x0000000000000000      0x118
  .debug_aranges
                 0x0000000000000000       0x20 CMakeFiles/Interrupt_CoolConfig_default_XC32_compile.dir/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task2/main.c.o
  .debug_aranges
-                0x0000000000000020       0x30 /tmp/ccO210FF.o
+                0x0000000000000020       0x30 /tmp/cczBSlBJ.o
  .debug_aranges
                 0x0000000000000050       0x30 /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libpic32c.a(data_init.o)
  .debug_aranges
@@ -336,36 +336,36 @@ LOAD stack
  .debug_aranges
                 0x00000000000000f8       0x20 /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libpic32c.a(pic32_data_init_copy.o)
 
-.debug_line     0x0000000000000000      0xa32
- .debug_line    0x0000000000000000      0x29a CMakeFiles/Interrupt_CoolConfig_default_XC32_compile.dir/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task2/main.c.o
- .debug_line    0x000000000000029a      0x28e /tmp/ccO210FF.o
- .debug_line    0x0000000000000528       0xa7 /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libpic32c.a(data_init.o)
- .debug_line    0x00000000000005cf      0x1c7 /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libg-musl.a(__libc_start_main.o)
- .debug_line    0x0000000000000796       0xb5 /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libg-musl.a(libc.o)
- .debug_line    0x000000000000084b       0xfb /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libg-musl.a(__environ.o)
- .debug_line    0x0000000000000946       0x72 /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libpic32c.a(pic32_data_init_clear.o)
- .debug_line    0x00000000000009b8       0x7a /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libpic32c.a(pic32_data_init_copy.o)
+.debug_line     0x0000000000000000      0xb5a
+ .debug_line    0x0000000000000000      0x3c2 CMakeFiles/Interrupt_CoolConfig_default_XC32_compile.dir/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task2/main.c.o
+ .debug_line    0x00000000000003c2      0x28e /tmp/cczBSlBJ.o
+ .debug_line    0x0000000000000650       0xa7 /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libpic32c.a(data_init.o)
+ .debug_line    0x00000000000006f7      0x1c7 /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libg-musl.a(__libc_start_main.o)
+ .debug_line    0x00000000000008be       0xb5 /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libg-musl.a(libc.o)
+ .debug_line    0x0000000000000973       0xfb /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libg-musl.a(__environ.o)
+ .debug_line    0x0000000000000a6e       0x72 /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libpic32c.a(pic32_data_init_clear.o)
+ .debug_line    0x0000000000000ae0       0x7a /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libpic32c.a(pic32_data_init_copy.o)
 
-.debug_str      0x0000000000000000     0x2d18
- .debug_str     0x0000000000000000      0xda1 CMakeFiles/Interrupt_CoolConfig_default_XC32_compile.dir/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task2/main.c.o
- .debug_str     0x0000000000000da1     0x1063 /tmp/ccO210FF.o
- .debug_str     0x0000000000001e04      0x206 /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libpic32c.a(data_init.o)
- .debug_str     0x000000000000200a      0x3d4 /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libg-musl.a(__libc_start_main.o)
- .debug_str     0x00000000000023de      0x33f /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libg-musl.a(libc.o)
- .debug_str     0x000000000000271d      0x23f /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libg-musl.a(__environ.o)
- .debug_str     0x000000000000295c      0x1df /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libpic32c.a(pic32_data_init_clear.o)
- .debug_str     0x0000000000002b3b      0x1dd /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libpic32c.a(pic32_data_init_copy.o)
+.debug_str      0x0000000000000000     0x2f86
+ .debug_str     0x0000000000000000     0x100f CMakeFiles/Interrupt_CoolConfig_default_XC32_compile.dir/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task2/main.c.o
+ .debug_str     0x000000000000100f     0x1063 /tmp/cczBSlBJ.o
+ .debug_str     0x0000000000002072      0x206 /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libpic32c.a(data_init.o)
+ .debug_str     0x0000000000002278      0x3d4 /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libg-musl.a(__libc_start_main.o)
+ .debug_str     0x000000000000264c      0x33f /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libg-musl.a(libc.o)
+ .debug_str     0x000000000000298b      0x23f /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libg-musl.a(__environ.o)
+ .debug_str     0x0000000000002bca      0x1df /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libpic32c.a(pic32_data_init_clear.o)
+ .debug_str     0x0000000000002da9      0x1dd /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libpic32c.a(pic32_data_init_copy.o)
 
-.debug_frame    0x0000000000000000      0x228
- .debug_frame   0x0000000000000000      0x118 CMakeFiles/Interrupt_CoolConfig_default_XC32_compile.dir/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task2/main.c.o
- .debug_frame   0x0000000000000118       0x40 /tmp/ccO210FF.o
- .debug_frame   0x0000000000000158       0x4c /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libpic32c.a(data_init.o)
- .debug_frame   0x00000000000001a4       0x3c /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libg-musl.a(__libc_start_main.o)
- .debug_frame   0x00000000000001e0       0x20 /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libpic32c.a(pic32_data_init_clear.o)
- .debug_frame   0x0000000000000200       0x28 /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libpic32c.a(pic32_data_init_copy.o)
+.debug_frame    0x0000000000000000      0x2f8
+ .debug_frame   0x0000000000000000      0x1e8 CMakeFiles/Interrupt_CoolConfig_default_XC32_compile.dir/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task2/main.c.o
+ .debug_frame   0x00000000000001e8       0x40 /tmp/cczBSlBJ.o
+ .debug_frame   0x0000000000000228       0x4c /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libpic32c.a(data_init.o)
+ .debug_frame   0x0000000000000274       0x3c /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libg-musl.a(__libc_start_main.o)
+ .debug_frame   0x00000000000002b0       0x20 /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libpic32c.a(pic32_data_init_clear.o)
+ .debug_frame   0x00000000000002d0       0x28 /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libpic32c.a(pic32_data_init_copy.o)
 
 .debug_ranges   0x0000000000000000       0xa0
- .debug_ranges  0x0000000000000000       0x20 /tmp/ccO210FF.o
+ .debug_ranges  0x0000000000000000       0x20 /tmp/cczBSlBJ.o
  .debug_ranges  0x0000000000000020       0x20 /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libpic32c.a(data_init.o)
  .debug_ranges  0x0000000000000040       0x40 /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libg-musl.a(__libc_start_main.o)
  .debug_ranges  0x0000000000000080       0x10 /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libpic32c.a(pic32_data_init_clear.o)
@@ -407,7 +407,7 @@ LOAD stack
                 0x0000000020000070                ___environ
 
 .bss%5          0x0000000020000074        0x1
- .bss           0x0000000020000074        0x1 /tmp/ccO210FF.o
+ .bss           0x0000000020000074        0x1 /tmp/cczBSlBJ.o
 
 .bss%z1         0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libpic32c.a(pic32_data_init_copy.o)
@@ -462,7 +462,7 @@ LOAD stack
  .data          0x0000000000000000        0x0 /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libpic32c.a(data_init.o)
 
 .data%z16       0x0000000000000000        0x0
- .data          0x0000000000000000        0x0 /tmp/ccO210FF.o
+ .data          0x0000000000000000        0x0 /tmp/cczBSlBJ.o
 
 .data%z17       0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 CMakeFiles/Interrupt_CoolConfig_default_XC32_compile.dir/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task2/main.c.o
@@ -473,227 +473,229 @@ LOAD stack
 .data%z19       0x0000000000000000        0x0
  .data          0x0000000000000000        0x0 /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v7e-m+fp/hard/crti.o
 
-.text%8         0x0000000000000280      0x1c0
- .text          0x0000000000000280      0x1c0 CMakeFiles/Interrupt_CoolConfig_default_XC32_compile.dir/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task2/main.c.o
-                0x000000000000032c                GCLK_init
-                0x000000000000037c                EIC_init
-                0x00000000000003c4                pin_init
-                0x00000000000003f8                EIC_EXTINT_15_Handler
-                0x0000000000000428                main
+.text%8         0x0000000000000280      0x3c0
+ .text          0x0000000000000280      0x3c0 CMakeFiles/Interrupt_CoolConfig_default_XC32_compile.dir/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task2/main.c.o
+                0x0000000000000414                GCLK0_init
+                0x0000000000000464                GCLK1_init
+                0x00000000000004b4                GCLK2_init
+                0x0000000000000520                EIC_init
+                0x0000000000000594                EIC_EXTINT_15_Handler
+                0x00000000000005c0                pin_init
+                0x0000000000000600                main
 
 .text.Reset_Handler%9
-                0x0000000000000440       0xa0
+                0x0000000000000640       0xa0
  .text.Reset_Handler
-                0x0000000000000440       0xa0 /tmp/ccO210FF.o
-                0x0000000000000440                Reset_Handler
+                0x0000000000000640       0xa0 /tmp/cczBSlBJ.o
+                0x0000000000000640                Reset_Handler
 
-.dinit%10       0x00000000000004e0       0x70
- .dinit         0x00000000000004e0       0x70 data_init
+.dinit%10       0x00000000000006e0       0x70
+ .dinit         0x00000000000006e0       0x70 data_init
 
 .text.__libc_start_init%11
-                0x0000000000000550       0x5c
+                0x0000000000000750       0x5c
  .text.__libc_start_init
-                0x0000000000000550       0x5c /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libg-musl.a(__libc_start_main.o)
-                0x0000000000000550                __libc_init_array
+                0x0000000000000750       0x5c /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libg-musl.a(__libc_start_main.o)
+                0x0000000000000750                __libc_init_array
 
-.text%12        0x00000000000005ac       0x40
- .text          0x00000000000005ac       0x40 /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+.text%12        0x00000000000007ac       0x40
+ .text          0x00000000000007ac       0x40 /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v7e-m+fp/hard/crtbegin.o
 
 .text.__pic32c_data_initialization%13
-                0x00000000000005ec       0x38
+                0x00000000000007ec       0x38
  .text.__pic32c_data_initialization
-                0x00000000000005ec       0x38 /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libpic32c.a(data_init.o)
-                0x00000000000005ec                __pic32c_data_initialization
+                0x00000000000007ec       0x38 /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libpic32c.a(data_init.o)
+                0x00000000000007ec                __pic32c_data_initialization
 
-.text%14        0x0000000000000624       0x28
- .text          0x0000000000000624       0x28 /tmp/ccO210FF.o
+.text%14        0x0000000000000824       0x28
+ .text          0x0000000000000824       0x28 /tmp/cczBSlBJ.o
 
 .text.__dinit_copy%15
-                0x000000000000064c       0x1e
+                0x000000000000084c       0x1e
  .text.__dinit_copy
-                0x000000000000064c       0x1e /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libpic32c.a(pic32_data_init_copy.o)
-                0x000000000000064c                __dinit_copy
-                0x000000000000064c                __dinit_copy_needed
+                0x000000000000084c       0x1e /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libpic32c.a(pic32_data_init_copy.o)
+                0x000000000000084c                __dinit_copy
+                0x000000000000084c                __dinit_copy_needed
 
-.rodata%16      0x000000000000066c       0x14
- .rodata        0x000000000000066c       0x14 /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libpic32c.a(data_init.o)
+.rodata%16      0x000000000000086c       0x14
+ .rodata        0x000000000000086c       0x14 /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libpic32c.a(data_init.o)
 
 .text.__dinit_clear%17
-                0x0000000000000680       0x12
+                0x0000000000000880       0x12
  .text.__dinit_clear
-                0x0000000000000680       0x12 /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libpic32c.a(pic32_data_init_clear.o)
-                0x0000000000000680                __dinit_clear_needed
-                0x0000000000000680                __dinit_clear
+                0x0000000000000880       0x12 /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libpic32c.a(pic32_data_init_clear.o)
+                0x0000000000000880                __dinit_clear_needed
+                0x0000000000000880                __dinit_clear
 
 .text.__dummy_decompress%18
-                0x0000000000000692        0x4
+                0x0000000000000892        0x4
  .text.__dummy_decompress
-                0x0000000000000692        0x4 /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libpic32c.a(data_init.o)
-                0x0000000000000692                __dinit_copy_emb
-                0x0000000000000692                __dinit_decompress
-                0x0000000000000692                __dinit_copy_val_data
+                0x0000000000000892        0x4 /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libpic32c.a(data_init.o)
+                0x0000000000000892                __dinit_copy_emb
+                0x0000000000000892                __dinit_decompress
+                0x0000000000000892                __dinit_copy_val_data
 
 .text.Dummy_Handler%19
-                0x000000000000066a        0x2
+                0x000000000000086a        0x2
  .text.Dummy_Handler
-                0x000000000000066a        0x2 /tmp/ccO210FF.o
-                0x000000000000066a                EIC_EXTINT_9_Handler
-                0x000000000000066a                TCC0_MC5_Handler
-                0x000000000000066a                SVCall_Handler
-                0x000000000000066a                USB_SOF_HSOF_Handler
-                0x000000000000066a                SERCOM0_2_Handler
-                0x000000000000066a                TCC4_OTHER_Handler
-                0x000000000000066a                TCC2_MC2_Handler
-                0x000000000000066a                EVSYS_0_Handler
-                0x000000000000066a                TRNG_Handler
-                0x000000000000066a                HardFault_Handler
-                0x000000000000066a                TC2_Handler
-                0x000000000000066a                USB_TRCPT0_Handler
-                0x000000000000066a                DAC_OTHER_Handler
-                0x000000000000066a                AC_Handler
-                0x000000000000066a                DAC_EMPTY_0_Handler
-                0x000000000000066a                DMAC_OTHER_Handler
-                0x000000000000066a                EIC_EXTINT_5_Handler
-                0x000000000000066a                SERCOM3_1_Handler
-                0x000000000000066a                SysTick_Handler
-                0x000000000000066a                SERCOM4_OTHER_Handler
-                0x000000000000066a                SERCOM3_2_Handler
-                0x000000000000066a                Reserved72
-                0x000000000000066a                EIC_EXTINT_6_Handler
-                0x000000000000066a                PendSV_Handler
-                0x000000000000066a                Reserved84
-                0x000000000000066a                TCC4_MC0_Handler
-                0x000000000000066a                EVSYS_3_Handler
-                0x000000000000066a                Reserved43
-                0x000000000000066a                QSPI_Handler
-                0x000000000000066a                NonMaskableInt_Handler
-                0x000000000000066a                TCC2_MC0_Handler
-                0x000000000000066a                PDEC_OTHER_Handler
-                0x000000000000066a                TCC3_MC0_Handler
-                0x000000000000066a                PDEC_MC1_Handler
-                0x000000000000066a                TCC2_MC1_Handler
-                0x000000000000066a                OSCCTRL_XOSC1_Handler
-                0x000000000000066a                PDEC_MC0_Handler
-                0x000000000000066a                EIC_EXTINT_4_Handler
-                0x000000000000066a                EIC_EXTINT_7_Handler
-                0x000000000000066a                SERCOM0_OTHER_Handler
-                0x000000000000066a                EVSYS_OTHER_Handler
-                0x000000000000066a                SERCOM0_0_Handler
-                0x000000000000066a                RTC_Handler
-                0x000000000000066a                UsageFault_Handler
-                0x000000000000066a                SERCOM4_0_Handler
-                0x000000000000066a                TCC1_MC0_Handler
-                0x000000000000066a                SERCOM1_OTHER_Handler
-                0x000000000000066a                TCC2_OTHER_Handler
-                0x000000000000066a                EIC_EXTINT_11_Handler
-                0x000000000000066a                SUPC_BODDET_Handler
-                0x000000000000066a                EIC_EXTINT_14_Handler
-                0x000000000000066a                OSC32KCTRL_Handler
-                0x000000000000066a                EVSYS_1_Handler
-                0x000000000000066a                TCC4_MC1_Handler
-                0x000000000000066a                DMAC_0_Handler
-                0x000000000000066a                SUPC_OTHER_Handler
-                0x000000000000066a                Reserved74
-                0x000000000000066a                WDT_Handler
-                0x000000000000066a                CAN0_Handler
-                0x000000000000066a                EIC_EXTINT_1_Handler
-                0x000000000000066a                TCC3_MC1_Handler
-                0x000000000000066a                SERCOM5_0_Handler
-                0x000000000000066a                TC4_Handler
-                0x000000000000066a                TC1_Handler
-                0x000000000000066a                TCC1_MC1_Handler
-                0x000000000000066a                EIC_EXTINT_0_Handler
-                0x000000000000066a                TCC1_OTHER_Handler
-                0x000000000000066a                PAC_Handler
-                0x000000000000066a                SERCOM4_1_Handler
-                0x000000000000066a                TC3_Handler
-                0x000000000000066a                Reserved71
-                0x000000000000066a                Dummy_Handler
-                0x000000000000066a                DAC_RESRDY_0_Handler
-                0x000000000000066a                SERCOM5_1_Handler
-                0x000000000000066a                Reserved113
-                0x000000000000066a                DMAC_2_Handler
-                0x000000000000066a                TCC0_MC4_Handler
-                0x000000000000066a                USB_TRCPT1_Handler
-                0x000000000000066a                SERCOM0_1_Handler
-                0x000000000000066a                Reserved73
-                0x000000000000066a                Reserved42
-                0x000000000000066a                TCC0_MC3_Handler
-                0x000000000000066a                EIC_EXTINT_12_Handler
-                0x000000000000066a                OSCCTRL_DPLL0_Handler
-                0x000000000000066a                Reserved76
-                0x000000000000066a                SERCOM5_OTHER_Handler
-                0x000000000000066a                PM_Handler
-                0x000000000000066a                OSCCTRL_DFLL_Handler
-                0x000000000000066a                Reserved114
-                0x000000000000066a                DAC_RESRDY_1_Handler
-                0x000000000000066a                DMAC_1_Handler
-                0x000000000000066a                USB_OTHER_Handler
-                0x000000000000066a                CAN1_Handler
-                0x000000000000066a                TCC0_OTHER_Handler
-                0x000000000000066a                EIC_EXTINT_10_Handler
-                0x000000000000066a                TCC1_MC3_Handler
-                0x000000000000066a                OSCCTRL_XOSC0_Handler
-                0x000000000000066a                TCC0_MC0_Handler
-                0x000000000000066a                EIC_EXTINT_2_Handler
-                0x000000000000066a                SDHC0_Handler
-                0x000000000000066a                SERCOM1_1_Handler
-                0x000000000000066a                I2S_Handler
-                0x000000000000066a                PCC_Handler
-                0x000000000000066a                TCC3_OTHER_Handler
-                0x000000000000066a                EIC_EXTINT_13_Handler
-                0x000000000000066a                SERCOM1_0_Handler
-                0x000000000000066a                Reserved70
-                0x000000000000066a                PUKCC_Handler
-                0x000000000000066a                SERCOM2_1_Handler
-                0x000000000000066a                SERCOM1_2_Handler
-                0x000000000000066a                SERCOM3_0_Handler
-                0x000000000000066a                SERCOM4_2_Handler
-                0x000000000000066a                TCC1_MC2_Handler
-                0x000000000000066a                ADC1_RESRDY_Handler
-                0x000000000000066a                NVMCTRL_1_Handler
-                0x000000000000066a                SERCOM5_2_Handler
-                0x000000000000066a                SERCOM2_2_Handler
-                0x000000000000066a                DAC_EMPTY_1_Handler
-                0x000000000000066a                ADC1_OTHER_Handler
-                0x000000000000066a                Reserved44
-                0x000000000000066a                EIC_EXTINT_3_Handler
-                0x000000000000066a                OSCCTRL_DPLL1_Handler
-                0x000000000000066a                SERCOM3_OTHER_Handler
-                0x000000000000066a                Reserved77
-                0x000000000000066a                EIC_EXTINT_8_Handler
-                0x000000000000066a                NVMCTRL_0_Handler
-                0x000000000000066a                ADC0_RESRDY_Handler
-                0x000000000000066a                ADC0_OTHER_Handler
-                0x000000000000066a                MCLK_Handler
-                0x000000000000066a                EVSYS_2_Handler
-                0x000000000000066a                SERCOM2_OTHER_Handler
-                0x000000000000066a                BusFault_Handler
-                0x000000000000066a                FREQM_Handler
-                0x000000000000066a                TC0_Handler
-                0x000000000000066a                MemoryManagement_Handler
-                0x000000000000066a                TCC0_MC1_Handler
-                0x000000000000066a                DMAC_3_Handler
-                0x000000000000066a                DebugMonitor_Handler
-                0x000000000000066a                RAMECC_Handler
-                0x000000000000066a                TC5_Handler
-                0x000000000000066a                SERCOM2_0_Handler
-                0x000000000000066a                ICM_Handler
-                0x000000000000066a                AES_Handler
-                0x000000000000066a                TCC0_MC2_Handler
-                0x000000000000066a                Reserved75
+                0x000000000000086a        0x2 /tmp/cczBSlBJ.o
+                0x000000000000086a                EIC_EXTINT_9_Handler
+                0x000000000000086a                TCC0_MC5_Handler
+                0x000000000000086a                SVCall_Handler
+                0x000000000000086a                USB_SOF_HSOF_Handler
+                0x000000000000086a                SERCOM0_2_Handler
+                0x000000000000086a                TCC4_OTHER_Handler
+                0x000000000000086a                TCC2_MC2_Handler
+                0x000000000000086a                EVSYS_0_Handler
+                0x000000000000086a                TRNG_Handler
+                0x000000000000086a                HardFault_Handler
+                0x000000000000086a                TC2_Handler
+                0x000000000000086a                USB_TRCPT0_Handler
+                0x000000000000086a                DAC_OTHER_Handler
+                0x000000000000086a                AC_Handler
+                0x000000000000086a                DAC_EMPTY_0_Handler
+                0x000000000000086a                DMAC_OTHER_Handler
+                0x000000000000086a                EIC_EXTINT_5_Handler
+                0x000000000000086a                SERCOM3_1_Handler
+                0x000000000000086a                SysTick_Handler
+                0x000000000000086a                SERCOM4_OTHER_Handler
+                0x000000000000086a                SERCOM3_2_Handler
+                0x000000000000086a                Reserved72
+                0x000000000000086a                EIC_EXTINT_6_Handler
+                0x000000000000086a                PendSV_Handler
+                0x000000000000086a                Reserved84
+                0x000000000000086a                TCC4_MC0_Handler
+                0x000000000000086a                EVSYS_3_Handler
+                0x000000000000086a                Reserved43
+                0x000000000000086a                QSPI_Handler
+                0x000000000000086a                NonMaskableInt_Handler
+                0x000000000000086a                TCC2_MC0_Handler
+                0x000000000000086a                PDEC_OTHER_Handler
+                0x000000000000086a                TCC3_MC0_Handler
+                0x000000000000086a                PDEC_MC1_Handler
+                0x000000000000086a                TCC2_MC1_Handler
+                0x000000000000086a                OSCCTRL_XOSC1_Handler
+                0x000000000000086a                PDEC_MC0_Handler
+                0x000000000000086a                EIC_EXTINT_4_Handler
+                0x000000000000086a                EIC_EXTINT_7_Handler
+                0x000000000000086a                SERCOM0_OTHER_Handler
+                0x000000000000086a                EVSYS_OTHER_Handler
+                0x000000000000086a                SERCOM0_0_Handler
+                0x000000000000086a                RTC_Handler
+                0x000000000000086a                UsageFault_Handler
+                0x000000000000086a                SERCOM4_0_Handler
+                0x000000000000086a                TCC1_MC0_Handler
+                0x000000000000086a                SERCOM1_OTHER_Handler
+                0x000000000000086a                TCC2_OTHER_Handler
+                0x000000000000086a                EIC_EXTINT_11_Handler
+                0x000000000000086a                SUPC_BODDET_Handler
+                0x000000000000086a                EIC_EXTINT_14_Handler
+                0x000000000000086a                OSC32KCTRL_Handler
+                0x000000000000086a                EVSYS_1_Handler
+                0x000000000000086a                TCC4_MC1_Handler
+                0x000000000000086a                DMAC_0_Handler
+                0x000000000000086a                SUPC_OTHER_Handler
+                0x000000000000086a                Reserved74
+                0x000000000000086a                WDT_Handler
+                0x000000000000086a                CAN0_Handler
+                0x000000000000086a                EIC_EXTINT_1_Handler
+                0x000000000000086a                TCC3_MC1_Handler
+                0x000000000000086a                SERCOM5_0_Handler
+                0x000000000000086a                TC4_Handler
+                0x000000000000086a                TC1_Handler
+                0x000000000000086a                TCC1_MC1_Handler
+                0x000000000000086a                EIC_EXTINT_0_Handler
+                0x000000000000086a                TCC1_OTHER_Handler
+                0x000000000000086a                PAC_Handler
+                0x000000000000086a                SERCOM4_1_Handler
+                0x000000000000086a                TC3_Handler
+                0x000000000000086a                Reserved71
+                0x000000000000086a                Dummy_Handler
+                0x000000000000086a                DAC_RESRDY_0_Handler
+                0x000000000000086a                SERCOM5_1_Handler
+                0x000000000000086a                Reserved113
+                0x000000000000086a                DMAC_2_Handler
+                0x000000000000086a                TCC0_MC4_Handler
+                0x000000000000086a                USB_TRCPT1_Handler
+                0x000000000000086a                SERCOM0_1_Handler
+                0x000000000000086a                Reserved73
+                0x000000000000086a                Reserved42
+                0x000000000000086a                TCC0_MC3_Handler
+                0x000000000000086a                EIC_EXTINT_12_Handler
+                0x000000000000086a                OSCCTRL_DPLL0_Handler
+                0x000000000000086a                Reserved76
+                0x000000000000086a                SERCOM5_OTHER_Handler
+                0x000000000000086a                PM_Handler
+                0x000000000000086a                OSCCTRL_DFLL_Handler
+                0x000000000000086a                Reserved114
+                0x000000000000086a                DAC_RESRDY_1_Handler
+                0x000000000000086a                DMAC_1_Handler
+                0x000000000000086a                USB_OTHER_Handler
+                0x000000000000086a                CAN1_Handler
+                0x000000000000086a                TCC0_OTHER_Handler
+                0x000000000000086a                EIC_EXTINT_10_Handler
+                0x000000000000086a                TCC1_MC3_Handler
+                0x000000000000086a                OSCCTRL_XOSC0_Handler
+                0x000000000000086a                TCC0_MC0_Handler
+                0x000000000000086a                EIC_EXTINT_2_Handler
+                0x000000000000086a                SDHC0_Handler
+                0x000000000000086a                SERCOM1_1_Handler
+                0x000000000000086a                I2S_Handler
+                0x000000000000086a                PCC_Handler
+                0x000000000000086a                TCC3_OTHER_Handler
+                0x000000000000086a                EIC_EXTINT_13_Handler
+                0x000000000000086a                SERCOM1_0_Handler
+                0x000000000000086a                Reserved70
+                0x000000000000086a                PUKCC_Handler
+                0x000000000000086a                SERCOM2_1_Handler
+                0x000000000000086a                SERCOM1_2_Handler
+                0x000000000000086a                SERCOM3_0_Handler
+                0x000000000000086a                SERCOM4_2_Handler
+                0x000000000000086a                TCC1_MC2_Handler
+                0x000000000000086a                ADC1_RESRDY_Handler
+                0x000000000000086a                NVMCTRL_1_Handler
+                0x000000000000086a                SERCOM5_2_Handler
+                0x000000000000086a                SERCOM2_2_Handler
+                0x000000000000086a                DAC_EMPTY_1_Handler
+                0x000000000000086a                ADC1_OTHER_Handler
+                0x000000000000086a                Reserved44
+                0x000000000000086a                EIC_EXTINT_3_Handler
+                0x000000000000086a                OSCCTRL_DPLL1_Handler
+                0x000000000000086a                SERCOM3_OTHER_Handler
+                0x000000000000086a                Reserved77
+                0x000000000000086a                EIC_EXTINT_8_Handler
+                0x000000000000086a                NVMCTRL_0_Handler
+                0x000000000000086a                ADC0_RESRDY_Handler
+                0x000000000000086a                ADC0_OTHER_Handler
+                0x000000000000086a                MCLK_Handler
+                0x000000000000086a                EVSYS_2_Handler
+                0x000000000000086a                SERCOM2_OTHER_Handler
+                0x000000000000086a                BusFault_Handler
+                0x000000000000086a                FREQM_Handler
+                0x000000000000086a                TC0_Handler
+                0x000000000000086a                MemoryManagement_Handler
+                0x000000000000086a                TCC0_MC1_Handler
+                0x000000000000086a                DMAC_3_Handler
+                0x000000000000086a                DebugMonitor_Handler
+                0x000000000000086a                RAMECC_Handler
+                0x000000000000086a                TC5_Handler
+                0x000000000000086a                SERCOM2_0_Handler
+                0x000000000000086a                ICM_Handler
+                0x000000000000086a                AES_Handler
+                0x000000000000086a                TCC0_MC2_Handler
+                0x000000000000086a                Reserved75
 
 .text.__dummy_init_tls%20
-                0x0000000000000696        0x2
+                0x0000000000000896        0x2
  .text.__dummy_init_tls
-                0x0000000000000696        0x2 /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libpic32c.a(data_init.o)
-                0x0000000000000696                xc32_init_tls
+                0x0000000000000896        0x2 /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libpic32c.a(data_init.o)
+                0x0000000000000896                xc32_init_tls
 
 .text.__dummy%21
-                0x0000000000000698        0x2
- .text.__dummy  0x0000000000000698        0x2 /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libg-musl.a(__libc_start_main.o)
-                0x0000000000000698                __init_host
-                0x0000000000000698                __init_stdio
+                0x0000000000000898        0x2
+ .text.__dummy  0x0000000000000898        0x2 /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libg-musl.a(__libc_start_main.o)
+                0x0000000000000898                __init_host
+                0x0000000000000898                __init_stdio
 
 .text%z20       0x0000000000000000        0x0
  .text          0x0000000000000000        0x0 /opt/microchip/xc32/v4.60/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard/libpic32c.a(pic32_data_init_copy.o)
