@@ -162,41 +162,57 @@ events:
       - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
       - "CMakeLists.txt:17 (project)"
     message: |
-      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-      Compiler: /opt/microchip/xc8/v3.10/bin/xc8-cc 
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /opt/microchip/xc32/v4.60/bin/xc32-gcc 
       Build flags: 
       Id flags:  
       
       The output was:
-      1
-      (2042) no target device specified; use the -mcpu option to specify a target device
+      0
+      Warning: dinit optimization threshholds not set; dinit may not function
+      /opt/microchip/xc32/v4.60/bin/bin/gcc/pic32mx/8.3.1/../../../../bin/pic32m-ld: warning: cannot find entry symbol _reset; defaulting to 000000009d000000
       
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task2/_build/Interrupt/CoolConfig/CMakeFiles/4.1.1/CompilerIdC/a.out
       
   -
     kind: "find-v1"
     backtrace:
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
       - "CMakeLists.txt:17 (project)"
-    mode: "file"
-    variable: "src_in"
-    description: "Path to a file."
+    mode: "program"
+    variable: "CMAKE_RANLIB"
+    description: "Path to a program."
     settings:
       SearchFramework: "NEVER"
       SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: true
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
       CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
       CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
       CMAKE_FIND_USE_INSTALL_PREFIX: true
     names:
-      - "CMakeCCompilerId.c.in"
+      - "xc32-ranlib"
+      - "ranlib"
     candidate_directories:
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/"
-    found: "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeCCompilerId.c.in"
+      - "/opt/microchip/xc32/v4.60/bin/"
+      - "/home/vikingur/.mplab/app-finder/apps/ninja/v1.13.1/"
+      - "/home/vikingur/.mplab/app-finder/apps/make/v4.4.1/linux/"
+      - "/home/vikingur/.mplab/app-finder/apps/hexmate/v3.00/dist/linux/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/usr/bin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+    found: "/opt/microchip/xc32/v4.60/bin/xc32-ranlib"
     search_context:
       ENV{PATH}:
         - "/home/vikingur/.mplab/app-finder/apps/ninja/v1.13.1"
@@ -212,624 +228,6 @@ events:
         - "/usr/local/games"
         - "/snap/bin"
         - "/snap/bin"
-  -
-    kind: "message-v1"
-    backtrace:
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:17 (project)"
-    message: |
-      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-      Compiler: /opt/microchip/xc8/v3.10/bin/xc8-cc 
-      Build flags: 
-      Id flags: -c 
-      
-      The output was:
-      1
-      (2042) no target device specified; use the -mcpu option to specify a target device
-      
-      
-  -
-    kind: "find-v1"
-    backtrace:
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:17 (project)"
-    mode: "file"
-    variable: "src_in"
-    description: "Path to a file."
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: true
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "CMakeCCompilerId.c.in"
-    candidate_directories:
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/"
-    found: "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeCCompilerId.c.in"
-    search_context:
-      ENV{PATH}:
-        - "/home/vikingur/.mplab/app-finder/apps/ninja/v1.13.1"
-        - "/home/vikingur/.mplab/app-finder/apps/make/v4.4.1/linux"
-        - "/home/vikingur/.mplab/app-finder/apps/hexmate/v3.00/dist/linux/bin"
-        - "/usr/local/sbin"
-        - "/usr/local/bin"
-        - "/usr/sbin"
-        - "/usr/bin"
-        - "/sbin"
-        - "/bin"
-        - "/usr/games"
-        - "/usr/local/games"
-        - "/snap/bin"
-        - "/snap/bin"
-  -
-    kind: "message-v1"
-    backtrace:
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:17 (project)"
-    message: |
-      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-      Compiler: /opt/microchip/xc8/v3.10/bin/xc8-cc 
-      Build flags: 
-      Id flags: -Aa 
-      
-      The output was:
-      1
-      (2042) no target device specified; use the -mcpu option to specify a target device
-      
-      
-  -
-    kind: "find-v1"
-    backtrace:
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:17 (project)"
-    mode: "file"
-    variable: "src_in"
-    description: "Path to a file."
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: true
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "CMakeCCompilerId.c.in"
-    candidate_directories:
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/"
-    found: "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeCCompilerId.c.in"
-    search_context:
-      ENV{PATH}:
-        - "/home/vikingur/.mplab/app-finder/apps/ninja/v1.13.1"
-        - "/home/vikingur/.mplab/app-finder/apps/make/v4.4.1/linux"
-        - "/home/vikingur/.mplab/app-finder/apps/hexmate/v3.00/dist/linux/bin"
-        - "/usr/local/sbin"
-        - "/usr/local/bin"
-        - "/usr/sbin"
-        - "/usr/bin"
-        - "/sbin"
-        - "/bin"
-        - "/usr/games"
-        - "/usr/local/games"
-        - "/snap/bin"
-        - "/snap/bin"
-  -
-    kind: "message-v1"
-    backtrace:
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:17 (project)"
-    message: |
-      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-      Compiler: /opt/microchip/xc8/v3.10/bin/xc8-cc 
-      Build flags: 
-      Id flags: -D__CLASSIC_C__ 
-      
-      The output was:
-      1
-      (2042) no target device specified; use the -mcpu option to specify a target device
-      
-      
-  -
-    kind: "find-v1"
-    backtrace:
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:17 (project)"
-    mode: "file"
-    variable: "src_in"
-    description: "Path to a file."
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: true
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "CMakeCCompilerId.c.in"
-    candidate_directories:
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/"
-    found: "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeCCompilerId.c.in"
-    search_context:
-      ENV{PATH}:
-        - "/home/vikingur/.mplab/app-finder/apps/ninja/v1.13.1"
-        - "/home/vikingur/.mplab/app-finder/apps/make/v4.4.1/linux"
-        - "/home/vikingur/.mplab/app-finder/apps/hexmate/v3.00/dist/linux/bin"
-        - "/usr/local/sbin"
-        - "/usr/local/bin"
-        - "/usr/sbin"
-        - "/usr/bin"
-        - "/sbin"
-        - "/bin"
-        - "/usr/games"
-        - "/usr/local/games"
-        - "/snap/bin"
-        - "/snap/bin"
-  -
-    kind: "message-v1"
-    backtrace:
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:17 (project)"
-    message: |
-      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-      Compiler: /opt/microchip/xc8/v3.10/bin/xc8-cc 
-      Build flags: 
-      Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
-      
-      The output was:
-      1
-      (2043) target device was not recognized
-      
-      
-  -
-    kind: "find-v1"
-    backtrace:
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:17 (project)"
-    mode: "file"
-    variable: "src_in"
-    description: "Path to a file."
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: true
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "CMakeCCompilerId.c.in"
-    candidate_directories:
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/"
-    found: "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeCCompilerId.c.in"
-    search_context:
-      ENV{PATH}:
-        - "/home/vikingur/.mplab/app-finder/apps/ninja/v1.13.1"
-        - "/home/vikingur/.mplab/app-finder/apps/make/v4.4.1/linux"
-        - "/home/vikingur/.mplab/app-finder/apps/hexmate/v3.00/dist/linux/bin"
-        - "/usr/local/sbin"
-        - "/usr/local/bin"
-        - "/usr/sbin"
-        - "/usr/bin"
-        - "/sbin"
-        - "/bin"
-        - "/usr/games"
-        - "/usr/local/games"
-        - "/snap/bin"
-        - "/snap/bin"
-  -
-    kind: "message-v1"
-    backtrace:
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:17 (project)"
-    message: |
-      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-      Compiler: /opt/microchip/xc8/v3.10/bin/xc8-cc 
-      Build flags: 
-      Id flags: -c;-I__does_not_exist__ 
-      
-      The output was:
-      1
-      (2042) no target device specified; use the -mcpu option to specify a target device
-      
-      
-  -
-    kind: "find-v1"
-    backtrace:
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:17 (project)"
-    mode: "file"
-    variable: "src_in"
-    description: "Path to a file."
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: true
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "CMakeCCompilerId.c.in"
-    candidate_directories:
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/"
-    found: "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeCCompilerId.c.in"
-    search_context:
-      ENV{PATH}:
-        - "/home/vikingur/.mplab/app-finder/apps/ninja/v1.13.1"
-        - "/home/vikingur/.mplab/app-finder/apps/make/v4.4.1/linux"
-        - "/home/vikingur/.mplab/app-finder/apps/hexmate/v3.00/dist/linux/bin"
-        - "/usr/local/sbin"
-        - "/usr/local/bin"
-        - "/usr/sbin"
-        - "/usr/bin"
-        - "/sbin"
-        - "/bin"
-        - "/usr/games"
-        - "/usr/local/games"
-        - "/snap/bin"
-        - "/snap/bin"
-  -
-    kind: "message-v1"
-    backtrace:
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:17 (project)"
-    message: |
-      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-      Compiler: /opt/microchip/xc8/v3.10/bin/xc8-cc 
-      Build flags: 
-      Id flags:  
-      
-      The output was:
-      1
-      (2042) no target device specified; use the -mcpu option to specify a target device
-      
-      
-  -
-    kind: "find-v1"
-    backtrace:
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:17 (project)"
-    mode: "file"
-    variable: "src_in"
-    description: "Path to a file."
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: true
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "CMakeCCompilerId.c.in"
-    candidate_directories:
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/"
-    found: "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeCCompilerId.c.in"
-    search_context:
-      ENV{PATH}:
-        - "/home/vikingur/.mplab/app-finder/apps/ninja/v1.13.1"
-        - "/home/vikingur/.mplab/app-finder/apps/make/v4.4.1/linux"
-        - "/home/vikingur/.mplab/app-finder/apps/hexmate/v3.00/dist/linux/bin"
-        - "/usr/local/sbin"
-        - "/usr/local/bin"
-        - "/usr/sbin"
-        - "/usr/bin"
-        - "/sbin"
-        - "/bin"
-        - "/usr/games"
-        - "/usr/local/games"
-        - "/snap/bin"
-        - "/snap/bin"
-  -
-    kind: "message-v1"
-    backtrace:
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:17 (project)"
-    message: |
-      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-      Compiler: /opt/microchip/xc8/v3.10/bin/xc8-cc 
-      Build flags: 
-      Id flags: -c 
-      
-      The output was:
-      1
-      (2042) no target device specified; use the -mcpu option to specify a target device
-      
-      
-  -
-    kind: "find-v1"
-    backtrace:
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:17 (project)"
-    mode: "file"
-    variable: "src_in"
-    description: "Path to a file."
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: true
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "CMakeCCompilerId.c.in"
-    candidate_directories:
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/"
-    found: "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeCCompilerId.c.in"
-    search_context:
-      ENV{PATH}:
-        - "/home/vikingur/.mplab/app-finder/apps/ninja/v1.13.1"
-        - "/home/vikingur/.mplab/app-finder/apps/make/v4.4.1/linux"
-        - "/home/vikingur/.mplab/app-finder/apps/hexmate/v3.00/dist/linux/bin"
-        - "/usr/local/sbin"
-        - "/usr/local/bin"
-        - "/usr/sbin"
-        - "/usr/bin"
-        - "/sbin"
-        - "/bin"
-        - "/usr/games"
-        - "/usr/local/games"
-        - "/snap/bin"
-        - "/snap/bin"
-  -
-    kind: "message-v1"
-    backtrace:
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:17 (project)"
-    message: |
-      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-      Compiler: /opt/microchip/xc8/v3.10/bin/xc8-cc 
-      Build flags: 
-      Id flags: -Aa 
-      
-      The output was:
-      1
-      (2042) no target device specified; use the -mcpu option to specify a target device
-      
-      
-  -
-    kind: "find-v1"
-    backtrace:
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:17 (project)"
-    mode: "file"
-    variable: "src_in"
-    description: "Path to a file."
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: true
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "CMakeCCompilerId.c.in"
-    candidate_directories:
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/"
-    found: "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeCCompilerId.c.in"
-    search_context:
-      ENV{PATH}:
-        - "/home/vikingur/.mplab/app-finder/apps/ninja/v1.13.1"
-        - "/home/vikingur/.mplab/app-finder/apps/make/v4.4.1/linux"
-        - "/home/vikingur/.mplab/app-finder/apps/hexmate/v3.00/dist/linux/bin"
-        - "/usr/local/sbin"
-        - "/usr/local/bin"
-        - "/usr/sbin"
-        - "/usr/bin"
-        - "/sbin"
-        - "/bin"
-        - "/usr/games"
-        - "/usr/local/games"
-        - "/snap/bin"
-        - "/snap/bin"
-  -
-    kind: "message-v1"
-    backtrace:
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:17 (project)"
-    message: |
-      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-      Compiler: /opt/microchip/xc8/v3.10/bin/xc8-cc 
-      Build flags: 
-      Id flags: -D__CLASSIC_C__ 
-      
-      The output was:
-      1
-      (2042) no target device specified; use the -mcpu option to specify a target device
-      
-      
-  -
-    kind: "find-v1"
-    backtrace:
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:17 (project)"
-    mode: "file"
-    variable: "src_in"
-    description: "Path to a file."
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: true
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "CMakeCCompilerId.c.in"
-    candidate_directories:
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/"
-    found: "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeCCompilerId.c.in"
-    search_context:
-      ENV{PATH}:
-        - "/home/vikingur/.mplab/app-finder/apps/ninja/v1.13.1"
-        - "/home/vikingur/.mplab/app-finder/apps/make/v4.4.1/linux"
-        - "/home/vikingur/.mplab/app-finder/apps/hexmate/v3.00/dist/linux/bin"
-        - "/usr/local/sbin"
-        - "/usr/local/bin"
-        - "/usr/sbin"
-        - "/usr/bin"
-        - "/sbin"
-        - "/bin"
-        - "/usr/games"
-        - "/usr/local/games"
-        - "/snap/bin"
-        - "/snap/bin"
-  -
-    kind: "message-v1"
-    backtrace:
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:17 (project)"
-    message: |
-      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-      Compiler: /opt/microchip/xc8/v3.10/bin/xc8-cc 
-      Build flags: 
-      Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
-      
-      The output was:
-      1
-      (2043) target device was not recognized
-      
-      
-  -
-    kind: "find-v1"
-    backtrace:
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:17 (project)"
-    mode: "file"
-    variable: "src_in"
-    description: "Path to a file."
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: true
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "CMakeCCompilerId.c.in"
-    candidate_directories:
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/"
-    found: "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeCCompilerId.c.in"
-    search_context:
-      ENV{PATH}:
-        - "/home/vikingur/.mplab/app-finder/apps/ninja/v1.13.1"
-        - "/home/vikingur/.mplab/app-finder/apps/make/v4.4.1/linux"
-        - "/home/vikingur/.mplab/app-finder/apps/hexmate/v3.00/dist/linux/bin"
-        - "/usr/local/sbin"
-        - "/usr/local/bin"
-        - "/usr/sbin"
-        - "/usr/bin"
-        - "/sbin"
-        - "/bin"
-        - "/usr/games"
-        - "/usr/local/games"
-        - "/snap/bin"
-        - "/snap/bin"
-  -
-    kind: "message-v1"
-    backtrace:
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:17 (project)"
-    message: |
-      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-      Compiler: /opt/microchip/xc8/v3.10/bin/xc8-cc 
-      Build flags: 
-      Id flags: -c;-I__does_not_exist__ 
-      
-      The output was:
-      1
-      (2042) no target device specified; use the -mcpu option to specify a target device
-      
-      
-  -
-    kind: "message-v1"
-    backtrace:
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:1303 (message)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:86 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:17 (project)"
-    message: |
-      Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
-      (2042) no target device specified; use the -mcpu option to specify a target device
-  -
-    kind: "message-v1"
-    backtrace:
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:1303 (message)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:86 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:17 (project)"
-    message: |
-      Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
-      (2042) no target device specified; use the -mcpu option to specify a target device
   -
     kind: "find-v1"
     backtrace:
@@ -848,9 +246,10 @@ events:
       CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
       CMAKE_FIND_USE_INSTALL_PREFIX: true
     names:
+      - "xc32-strip"
       - "strip"
     candidate_directories:
-      - "/opt/microchip/xc8/v3.10/bin/"
+      - "/opt/microchip/xc32/v4.60/bin/"
       - "/home/vikingur/.mplab/app-finder/apps/ninja/v1.13.1/"
       - "/home/vikingur/.mplab/app-finder/apps/make/v4.4.1/linux/"
       - "/home/vikingur/.mplab/app-finder/apps/hexmate/v3.00/dist/linux/bin/"
@@ -863,21 +262,7 @@ events:
       - "/usr/games/"
       - "/usr/local/games/"
       - "/snap/bin/"
-    searched_directories:
-      - "/opt/microchip/xc8/v3.10/bin/strip"
-      - "/home/vikingur/.mplab/app-finder/apps/ninja/v1.13.1/strip"
-      - "/home/vikingur/.mplab/app-finder/apps/make/v4.4.1/linux/strip"
-      - "/home/vikingur/.mplab/app-finder/apps/hexmate/v3.00/dist/linux/bin/strip"
-      - "/usr/local/sbin/strip"
-      - "/usr/local/bin/strip"
-      - "/usr/sbin/strip"
-      - "/usr/bin/strip"
-      - "/sbin/strip"
-      - "/bin/strip"
-      - "/usr/games/strip"
-      - "/usr/local/games/strip"
-      - "/snap/bin/strip"
-    found: false
+    found: "/opt/microchip/xc32/v4.60/bin/xc32-strip"
     search_context:
       ENV{PATH}:
         - "/home/vikingur/.mplab/app-finder/apps/ninja/v1.13.1"
@@ -911,9 +296,10 @@ events:
       CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
       CMAKE_FIND_USE_INSTALL_PREFIX: true
     names:
+      - "xc32-ld"
       - "ld"
     candidate_directories:
-      - "/opt/microchip/xc8/v3.10/bin/"
+      - "/opt/microchip/xc32/v4.60/bin/"
       - "/home/vikingur/.mplab/app-finder/apps/ninja/v1.13.1/"
       - "/home/vikingur/.mplab/app-finder/apps/make/v4.4.1/linux/"
       - "/home/vikingur/.mplab/app-finder/apps/hexmate/v3.00/dist/linux/bin/"
@@ -926,21 +312,7 @@ events:
       - "/usr/games/"
       - "/usr/local/games/"
       - "/snap/bin/"
-    searched_directories:
-      - "/opt/microchip/xc8/v3.10/bin/ld"
-      - "/home/vikingur/.mplab/app-finder/apps/ninja/v1.13.1/ld"
-      - "/home/vikingur/.mplab/app-finder/apps/make/v4.4.1/linux/ld"
-      - "/home/vikingur/.mplab/app-finder/apps/hexmate/v3.00/dist/linux/bin/ld"
-      - "/usr/local/sbin/ld"
-      - "/usr/local/bin/ld"
-      - "/usr/sbin/ld"
-      - "/usr/bin/ld"
-      - "/sbin/ld"
-      - "/bin/ld"
-      - "/usr/games/ld"
-      - "/usr/local/games/ld"
-      - "/snap/bin/ld"
-    found: false
+    found: "/opt/microchip/xc32/v4.60/bin/xc32-ld"
     search_context:
       ENV{PATH}:
         - "/home/vikingur/.mplab/app-finder/apps/ninja/v1.13.1"
@@ -974,9 +346,10 @@ events:
       CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
       CMAKE_FIND_USE_INSTALL_PREFIX: true
     names:
+      - "xc32-nm"
       - "nm"
     candidate_directories:
-      - "/opt/microchip/xc8/v3.10/bin/"
+      - "/opt/microchip/xc32/v4.60/bin/"
       - "/home/vikingur/.mplab/app-finder/apps/ninja/v1.13.1/"
       - "/home/vikingur/.mplab/app-finder/apps/make/v4.4.1/linux/"
       - "/home/vikingur/.mplab/app-finder/apps/hexmate/v3.00/dist/linux/bin/"
@@ -989,21 +362,7 @@ events:
       - "/usr/games/"
       - "/usr/local/games/"
       - "/snap/bin/"
-    searched_directories:
-      - "/opt/microchip/xc8/v3.10/bin/nm"
-      - "/home/vikingur/.mplab/app-finder/apps/ninja/v1.13.1/nm"
-      - "/home/vikingur/.mplab/app-finder/apps/make/v4.4.1/linux/nm"
-      - "/home/vikingur/.mplab/app-finder/apps/hexmate/v3.00/dist/linux/bin/nm"
-      - "/usr/local/sbin/nm"
-      - "/usr/local/bin/nm"
-      - "/usr/sbin/nm"
-      - "/usr/bin/nm"
-      - "/sbin/nm"
-      - "/bin/nm"
-      - "/usr/games/nm"
-      - "/usr/local/games/nm"
-      - "/snap/bin/nm"
-    found: false
+    found: "/opt/microchip/xc32/v4.60/bin/xc32-nm"
     search_context:
       ENV{PATH}:
         - "/home/vikingur/.mplab/app-finder/apps/ninja/v1.13.1"
@@ -1037,9 +396,10 @@ events:
       CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
       CMAKE_FIND_USE_INSTALL_PREFIX: true
     names:
+      - "xc32-objdump"
       - "objdump"
     candidate_directories:
-      - "/opt/microchip/xc8/v3.10/bin/"
+      - "/opt/microchip/xc32/v4.60/bin/"
       - "/home/vikingur/.mplab/app-finder/apps/ninja/v1.13.1/"
       - "/home/vikingur/.mplab/app-finder/apps/make/v4.4.1/linux/"
       - "/home/vikingur/.mplab/app-finder/apps/hexmate/v3.00/dist/linux/bin/"
@@ -1052,21 +412,7 @@ events:
       - "/usr/games/"
       - "/usr/local/games/"
       - "/snap/bin/"
-    searched_directories:
-      - "/opt/microchip/xc8/v3.10/bin/objdump"
-      - "/home/vikingur/.mplab/app-finder/apps/ninja/v1.13.1/objdump"
-      - "/home/vikingur/.mplab/app-finder/apps/make/v4.4.1/linux/objdump"
-      - "/home/vikingur/.mplab/app-finder/apps/hexmate/v3.00/dist/linux/bin/objdump"
-      - "/usr/local/sbin/objdump"
-      - "/usr/local/bin/objdump"
-      - "/usr/sbin/objdump"
-      - "/usr/bin/objdump"
-      - "/sbin/objdump"
-      - "/bin/objdump"
-      - "/usr/games/objdump"
-      - "/usr/local/games/objdump"
-      - "/snap/bin/objdump"
-    found: false
+    found: "/opt/microchip/xc32/v4.60/bin/xc32-objdump"
     search_context:
       ENV{PATH}:
         - "/home/vikingur/.mplab/app-finder/apps/ninja/v1.13.1"
@@ -1100,9 +446,10 @@ events:
       CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
       CMAKE_FIND_USE_INSTALL_PREFIX: true
     names:
+      - "xc32-objcopy"
       - "objcopy"
     candidate_directories:
-      - "/opt/microchip/xc8/v3.10/bin/"
+      - "/opt/microchip/xc32/v4.60/bin/"
       - "/home/vikingur/.mplab/app-finder/apps/ninja/v1.13.1/"
       - "/home/vikingur/.mplab/app-finder/apps/make/v4.4.1/linux/"
       - "/home/vikingur/.mplab/app-finder/apps/hexmate/v3.00/dist/linux/bin/"
@@ -1115,21 +462,7 @@ events:
       - "/usr/games/"
       - "/usr/local/games/"
       - "/snap/bin/"
-    searched_directories:
-      - "/opt/microchip/xc8/v3.10/bin/objcopy"
-      - "/home/vikingur/.mplab/app-finder/apps/ninja/v1.13.1/objcopy"
-      - "/home/vikingur/.mplab/app-finder/apps/make/v4.4.1/linux/objcopy"
-      - "/home/vikingur/.mplab/app-finder/apps/hexmate/v3.00/dist/linux/bin/objcopy"
-      - "/usr/local/sbin/objcopy"
-      - "/usr/local/bin/objcopy"
-      - "/usr/sbin/objcopy"
-      - "/usr/bin/objcopy"
-      - "/sbin/objcopy"
-      - "/bin/objcopy"
-      - "/usr/games/objcopy"
-      - "/usr/local/games/objcopy"
-      - "/snap/bin/objcopy"
-    found: false
+    found: "/opt/microchip/xc32/v4.60/bin/xc32-objcopy"
     search_context:
       ENV{PATH}:
         - "/home/vikingur/.mplab/app-finder/apps/ninja/v1.13.1"
@@ -1163,9 +496,10 @@ events:
       CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
       CMAKE_FIND_USE_INSTALL_PREFIX: true
     names:
+      - "xc32-readelf"
       - "readelf"
     candidate_directories:
-      - "/opt/microchip/xc8/v3.10/bin/"
+      - "/opt/microchip/xc32/v4.60/bin/"
       - "/home/vikingur/.mplab/app-finder/apps/ninja/v1.13.1/"
       - "/home/vikingur/.mplab/app-finder/apps/make/v4.4.1/linux/"
       - "/home/vikingur/.mplab/app-finder/apps/hexmate/v3.00/dist/linux/bin/"
@@ -1178,21 +512,7 @@ events:
       - "/usr/games/"
       - "/usr/local/games/"
       - "/snap/bin/"
-    searched_directories:
-      - "/opt/microchip/xc8/v3.10/bin/readelf"
-      - "/home/vikingur/.mplab/app-finder/apps/ninja/v1.13.1/readelf"
-      - "/home/vikingur/.mplab/app-finder/apps/make/v4.4.1/linux/readelf"
-      - "/home/vikingur/.mplab/app-finder/apps/hexmate/v3.00/dist/linux/bin/readelf"
-      - "/usr/local/sbin/readelf"
-      - "/usr/local/bin/readelf"
-      - "/usr/sbin/readelf"
-      - "/usr/bin/readelf"
-      - "/sbin/readelf"
-      - "/bin/readelf"
-      - "/usr/games/readelf"
-      - "/usr/local/games/readelf"
-      - "/snap/bin/readelf"
-    found: false
+    found: "/opt/microchip/xc32/v4.60/bin/xc32-readelf"
     search_context:
       ENV{PATH}:
         - "/home/vikingur/.mplab/app-finder/apps/ninja/v1.13.1"
@@ -1226,9 +546,10 @@ events:
       CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
       CMAKE_FIND_USE_INSTALL_PREFIX: true
     names:
+      - "xc32-dlltool"
       - "dlltool"
     candidate_directories:
-      - "/opt/microchip/xc8/v3.10/bin/"
+      - "/opt/microchip/xc32/v4.60/bin/"
       - "/home/vikingur/.mplab/app-finder/apps/ninja/v1.13.1/"
       - "/home/vikingur/.mplab/app-finder/apps/make/v4.4.1/linux/"
       - "/home/vikingur/.mplab/app-finder/apps/hexmate/v3.00/dist/linux/bin/"
@@ -1242,7 +563,20 @@ events:
       - "/usr/local/games/"
       - "/snap/bin/"
     searched_directories:
-      - "/opt/microchip/xc8/v3.10/bin/dlltool"
+      - "/opt/microchip/xc32/v4.60/bin/xc32-dlltool"
+      - "/home/vikingur/.mplab/app-finder/apps/ninja/v1.13.1/xc32-dlltool"
+      - "/home/vikingur/.mplab/app-finder/apps/make/v4.4.1/linux/xc32-dlltool"
+      - "/home/vikingur/.mplab/app-finder/apps/hexmate/v3.00/dist/linux/bin/xc32-dlltool"
+      - "/usr/local/sbin/xc32-dlltool"
+      - "/usr/local/bin/xc32-dlltool"
+      - "/usr/sbin/xc32-dlltool"
+      - "/usr/bin/xc32-dlltool"
+      - "/sbin/xc32-dlltool"
+      - "/bin/xc32-dlltool"
+      - "/usr/games/xc32-dlltool"
+      - "/usr/local/games/xc32-dlltool"
+      - "/snap/bin/xc32-dlltool"
+      - "/opt/microchip/xc32/v4.60/bin/dlltool"
       - "/home/vikingur/.mplab/app-finder/apps/ninja/v1.13.1/dlltool"
       - "/home/vikingur/.mplab/app-finder/apps/make/v4.4.1/linux/dlltool"
       - "/home/vikingur/.mplab/app-finder/apps/hexmate/v3.00/dist/linux/bin/dlltool"
@@ -1289,9 +623,10 @@ events:
       CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
       CMAKE_FIND_USE_INSTALL_PREFIX: true
     names:
+      - "xc32-addr2line"
       - "addr2line"
     candidate_directories:
-      - "/opt/microchip/xc8/v3.10/bin/"
+      - "/opt/microchip/xc32/v4.60/bin/"
       - "/home/vikingur/.mplab/app-finder/apps/ninja/v1.13.1/"
       - "/home/vikingur/.mplab/app-finder/apps/make/v4.4.1/linux/"
       - "/home/vikingur/.mplab/app-finder/apps/hexmate/v3.00/dist/linux/bin/"
@@ -1304,21 +639,7 @@ events:
       - "/usr/games/"
       - "/usr/local/games/"
       - "/snap/bin/"
-    searched_directories:
-      - "/opt/microchip/xc8/v3.10/bin/addr2line"
-      - "/home/vikingur/.mplab/app-finder/apps/ninja/v1.13.1/addr2line"
-      - "/home/vikingur/.mplab/app-finder/apps/make/v4.4.1/linux/addr2line"
-      - "/home/vikingur/.mplab/app-finder/apps/hexmate/v3.00/dist/linux/bin/addr2line"
-      - "/usr/local/sbin/addr2line"
-      - "/usr/local/bin/addr2line"
-      - "/usr/sbin/addr2line"
-      - "/usr/bin/addr2line"
-      - "/sbin/addr2line"
-      - "/bin/addr2line"
-      - "/usr/games/addr2line"
-      - "/usr/local/games/addr2line"
-      - "/snap/bin/addr2line"
-    found: false
+    found: "/opt/microchip/xc32/v4.60/bin/xc32-addr2line"
     search_context:
       ENV{PATH}:
         - "/home/vikingur/.mplab/app-finder/apps/ninja/v1.13.1"
@@ -1352,9 +673,10 @@ events:
       CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
       CMAKE_FIND_USE_INSTALL_PREFIX: true
     names:
+      - "xc32-tapi"
       - "tapi"
     candidate_directories:
-      - "/opt/microchip/xc8/v3.10/bin/"
+      - "/opt/microchip/xc32/v4.60/bin/"
       - "/home/vikingur/.mplab/app-finder/apps/ninja/v1.13.1/"
       - "/home/vikingur/.mplab/app-finder/apps/make/v4.4.1/linux/"
       - "/home/vikingur/.mplab/app-finder/apps/hexmate/v3.00/dist/linux/bin/"
@@ -1368,7 +690,20 @@ events:
       - "/usr/local/games/"
       - "/snap/bin/"
     searched_directories:
-      - "/opt/microchip/xc8/v3.10/bin/tapi"
+      - "/opt/microchip/xc32/v4.60/bin/xc32-tapi"
+      - "/home/vikingur/.mplab/app-finder/apps/ninja/v1.13.1/xc32-tapi"
+      - "/home/vikingur/.mplab/app-finder/apps/make/v4.4.1/linux/xc32-tapi"
+      - "/home/vikingur/.mplab/app-finder/apps/hexmate/v3.00/dist/linux/bin/xc32-tapi"
+      - "/usr/local/sbin/xc32-tapi"
+      - "/usr/local/bin/xc32-tapi"
+      - "/usr/sbin/xc32-tapi"
+      - "/usr/bin/xc32-tapi"
+      - "/sbin/xc32-tapi"
+      - "/bin/xc32-tapi"
+      - "/usr/games/xc32-tapi"
+      - "/usr/local/games/xc32-tapi"
+      - "/snap/bin/xc32-tapi"
+      - "/opt/microchip/xc32/v4.60/bin/tapi"
       - "/home/vikingur/.mplab/app-finder/apps/ninja/v1.13.1/tapi"
       - "/home/vikingur/.mplab/app-finder/apps/make/v4.4.1/linux/tapi"
       - "/home/vikingur/.mplab/app-finder/apps/hexmate/v3.00/dist/linux/bin/tapi"
@@ -1398,222 +733,710 @@ events:
         - "/snap/bin"
         - "/snap/bin"
   -
-    kind: "message-v1"
+    kind: "find-v1"
     backtrace:
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:1303 (message)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineASMCompiler.cmake:170 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/Compiler/GNU-FindBinUtils.cmake:18 (find_program)"
+      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:201 (include)"
       - "CMakeLists.txt:17 (project)"
-    message: |
-      Checking whether the ASM compiler is GNU using "--version" did not match "(GNU assembler)|(GCC)|(Free Software Foundation)":
-      Microchip MPLAB XC8 C Compiler V3.10
-      Build date: Aug 13 2025
-      Copyright (C) 2025 Microchip Technology Inc.
+    mode: "program"
+    variable: "CMAKE_C_COMPILER_AR"
+    description: "A wrapper around 'ar' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "xc32-gcc-ar-8.3"
+      - "xc32-gcc-ar-8"
+      - "xc32-gcc-ar8"
+      - "xc32-gcc-ar"
+    candidate_directories:
+      - "/opt/microchip/xc32/v4.60/bin/"
+      - "/home/vikingur/.mplab/app-finder/apps/ninja/v1.13.1/"
+      - "/home/vikingur/.mplab/app-finder/apps/make/v4.4.1/linux/"
+      - "/home/vikingur/.mplab/app-finder/apps/hexmate/v3.00/dist/linux/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/usr/bin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+    searched_directories:
+      - "/opt/microchip/xc32/v4.60/bin/xc32-gcc-ar-8.3"
+      - "/home/vikingur/.mplab/app-finder/apps/ninja/v1.13.1/xc32-gcc-ar-8.3"
+      - "/home/vikingur/.mplab/app-finder/apps/make/v4.4.1/linux/xc32-gcc-ar-8.3"
+      - "/home/vikingur/.mplab/app-finder/apps/hexmate/v3.00/dist/linux/bin/xc32-gcc-ar-8.3"
+      - "/usr/local/sbin/xc32-gcc-ar-8.3"
+      - "/usr/local/bin/xc32-gcc-ar-8.3"
+      - "/usr/sbin/xc32-gcc-ar-8.3"
+      - "/usr/bin/xc32-gcc-ar-8.3"
+      - "/sbin/xc32-gcc-ar-8.3"
+      - "/bin/xc32-gcc-ar-8.3"
+      - "/usr/games/xc32-gcc-ar-8.3"
+      - "/usr/local/games/xc32-gcc-ar-8.3"
+      - "/snap/bin/xc32-gcc-ar-8.3"
+      - "/opt/microchip/xc32/v4.60/bin/xc32-gcc-ar-8"
+      - "/home/vikingur/.mplab/app-finder/apps/ninja/v1.13.1/xc32-gcc-ar-8"
+      - "/home/vikingur/.mplab/app-finder/apps/make/v4.4.1/linux/xc32-gcc-ar-8"
+      - "/home/vikingur/.mplab/app-finder/apps/hexmate/v3.00/dist/linux/bin/xc32-gcc-ar-8"
+      - "/usr/local/sbin/xc32-gcc-ar-8"
+      - "/usr/local/bin/xc32-gcc-ar-8"
+      - "/usr/sbin/xc32-gcc-ar-8"
+      - "/usr/bin/xc32-gcc-ar-8"
+      - "/sbin/xc32-gcc-ar-8"
+      - "/bin/xc32-gcc-ar-8"
+      - "/usr/games/xc32-gcc-ar-8"
+      - "/usr/local/games/xc32-gcc-ar-8"
+      - "/snap/bin/xc32-gcc-ar-8"
+      - "/opt/microchip/xc32/v4.60/bin/xc32-gcc-ar8"
+      - "/home/vikingur/.mplab/app-finder/apps/ninja/v1.13.1/xc32-gcc-ar8"
+      - "/home/vikingur/.mplab/app-finder/apps/make/v4.4.1/linux/xc32-gcc-ar8"
+      - "/home/vikingur/.mplab/app-finder/apps/hexmate/v3.00/dist/linux/bin/xc32-gcc-ar8"
+      - "/usr/local/sbin/xc32-gcc-ar8"
+      - "/usr/local/bin/xc32-gcc-ar8"
+      - "/usr/sbin/xc32-gcc-ar8"
+      - "/usr/bin/xc32-gcc-ar8"
+      - "/sbin/xc32-gcc-ar8"
+      - "/bin/xc32-gcc-ar8"
+      - "/usr/games/xc32-gcc-ar8"
+      - "/usr/local/games/xc32-gcc-ar8"
+      - "/snap/bin/xc32-gcc-ar8"
+      - "/opt/microchip/xc32/v4.60/bin/xc32-gcc-ar"
+      - "/home/vikingur/.mplab/app-finder/apps/ninja/v1.13.1/xc32-gcc-ar"
+      - "/home/vikingur/.mplab/app-finder/apps/make/v4.4.1/linux/xc32-gcc-ar"
+      - "/home/vikingur/.mplab/app-finder/apps/hexmate/v3.00/dist/linux/bin/xc32-gcc-ar"
+      - "/usr/local/sbin/xc32-gcc-ar"
+      - "/usr/local/bin/xc32-gcc-ar"
+      - "/usr/sbin/xc32-gcc-ar"
+      - "/usr/bin/xc32-gcc-ar"
+      - "/sbin/xc32-gcc-ar"
+      - "/bin/xc32-gcc-ar"
+      - "/usr/games/xc32-gcc-ar"
+      - "/usr/local/games/xc32-gcc-ar"
+      - "/snap/bin/xc32-gcc-ar"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "/home/vikingur/.mplab/app-finder/apps/ninja/v1.13.1"
+        - "/home/vikingur/.mplab/app-finder/apps/make/v4.4.1/linux"
+        - "/home/vikingur/.mplab/app-finder/apps/hexmate/v3.00/dist/linux/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/Compiler/GNU-FindBinUtils.cmake:30 (find_program)"
+      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:201 (include)"
+      - "CMakeLists.txt:17 (project)"
+    mode: "program"
+    variable: "CMAKE_C_COMPILER_RANLIB"
+    description: "A wrapper around 'ranlib' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "xc32-gcc-ranlib-8.3"
+      - "xc32-gcc-ranlib-8"
+      - "xc32-gcc-ranlib8"
+      - "xc32-gcc-ranlib"
+    candidate_directories:
+      - "/opt/microchip/xc32/v4.60/bin/"
+      - "/home/vikingur/.mplab/app-finder/apps/ninja/v1.13.1/"
+      - "/home/vikingur/.mplab/app-finder/apps/make/v4.4.1/linux/"
+      - "/home/vikingur/.mplab/app-finder/apps/hexmate/v3.00/dist/linux/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/usr/bin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+    searched_directories:
+      - "/opt/microchip/xc32/v4.60/bin/xc32-gcc-ranlib-8.3"
+      - "/home/vikingur/.mplab/app-finder/apps/ninja/v1.13.1/xc32-gcc-ranlib-8.3"
+      - "/home/vikingur/.mplab/app-finder/apps/make/v4.4.1/linux/xc32-gcc-ranlib-8.3"
+      - "/home/vikingur/.mplab/app-finder/apps/hexmate/v3.00/dist/linux/bin/xc32-gcc-ranlib-8.3"
+      - "/usr/local/sbin/xc32-gcc-ranlib-8.3"
+      - "/usr/local/bin/xc32-gcc-ranlib-8.3"
+      - "/usr/sbin/xc32-gcc-ranlib-8.3"
+      - "/usr/bin/xc32-gcc-ranlib-8.3"
+      - "/sbin/xc32-gcc-ranlib-8.3"
+      - "/bin/xc32-gcc-ranlib-8.3"
+      - "/usr/games/xc32-gcc-ranlib-8.3"
+      - "/usr/local/games/xc32-gcc-ranlib-8.3"
+      - "/snap/bin/xc32-gcc-ranlib-8.3"
+      - "/opt/microchip/xc32/v4.60/bin/xc32-gcc-ranlib-8"
+      - "/home/vikingur/.mplab/app-finder/apps/ninja/v1.13.1/xc32-gcc-ranlib-8"
+      - "/home/vikingur/.mplab/app-finder/apps/make/v4.4.1/linux/xc32-gcc-ranlib-8"
+      - "/home/vikingur/.mplab/app-finder/apps/hexmate/v3.00/dist/linux/bin/xc32-gcc-ranlib-8"
+      - "/usr/local/sbin/xc32-gcc-ranlib-8"
+      - "/usr/local/bin/xc32-gcc-ranlib-8"
+      - "/usr/sbin/xc32-gcc-ranlib-8"
+      - "/usr/bin/xc32-gcc-ranlib-8"
+      - "/sbin/xc32-gcc-ranlib-8"
+      - "/bin/xc32-gcc-ranlib-8"
+      - "/usr/games/xc32-gcc-ranlib-8"
+      - "/usr/local/games/xc32-gcc-ranlib-8"
+      - "/snap/bin/xc32-gcc-ranlib-8"
+      - "/opt/microchip/xc32/v4.60/bin/xc32-gcc-ranlib8"
+      - "/home/vikingur/.mplab/app-finder/apps/ninja/v1.13.1/xc32-gcc-ranlib8"
+      - "/home/vikingur/.mplab/app-finder/apps/make/v4.4.1/linux/xc32-gcc-ranlib8"
+      - "/home/vikingur/.mplab/app-finder/apps/hexmate/v3.00/dist/linux/bin/xc32-gcc-ranlib8"
+      - "/usr/local/sbin/xc32-gcc-ranlib8"
+      - "/usr/local/bin/xc32-gcc-ranlib8"
+      - "/usr/sbin/xc32-gcc-ranlib8"
+      - "/usr/bin/xc32-gcc-ranlib8"
+      - "/sbin/xc32-gcc-ranlib8"
+      - "/bin/xc32-gcc-ranlib8"
+      - "/usr/games/xc32-gcc-ranlib8"
+      - "/usr/local/games/xc32-gcc-ranlib8"
+      - "/snap/bin/xc32-gcc-ranlib8"
+      - "/opt/microchip/xc32/v4.60/bin/xc32-gcc-ranlib"
+      - "/home/vikingur/.mplab/app-finder/apps/ninja/v1.13.1/xc32-gcc-ranlib"
+      - "/home/vikingur/.mplab/app-finder/apps/make/v4.4.1/linux/xc32-gcc-ranlib"
+      - "/home/vikingur/.mplab/app-finder/apps/hexmate/v3.00/dist/linux/bin/xc32-gcc-ranlib"
+      - "/usr/local/sbin/xc32-gcc-ranlib"
+      - "/usr/local/bin/xc32-gcc-ranlib"
+      - "/usr/sbin/xc32-gcc-ranlib"
+      - "/usr/bin/xc32-gcc-ranlib"
+      - "/sbin/xc32-gcc-ranlib"
+      - "/bin/xc32-gcc-ranlib"
+      - "/usr/games/xc32-gcc-ranlib"
+      - "/usr/local/games/xc32-gcc-ranlib"
+      - "/snap/bin/xc32-gcc-ranlib"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "/home/vikingur/.mplab/app-finder/apps/ninja/v1.13.1"
+        - "/home/vikingur/.mplab/app-finder/apps/make/v4.4.1/linux"
+        - "/home/vikingur/.mplab/app-finder/apps/hexmate/v3.00/dist/linux/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
+      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:17 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCXXCompilerId.cpp.in"
+    candidate_directories:
+      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/"
+    found: "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeCXXCompilerId.cpp.in"
+    search_context:
+      ENV{PATH}:
+        - "/home/vikingur/.mplab/app-finder/apps/ninja/v1.13.1"
+        - "/home/vikingur/.mplab/app-finder/apps/make/v4.4.1/linux"
+        - "/home/vikingur/.mplab/app-finder/apps/hexmate/v3.00/dist/linux/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
   -
     kind: "message-v1"
     backtrace:
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:1303 (message)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineASMCompiler.cmake:170 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
       - "CMakeLists.txt:17 (project)"
     message: |
-      Checking whether the ASM compiler is AppleClang using "--version" did not match "(Apple (clang|LLVM) version)":
-      Microchip MPLAB XC8 C Compiler V3.10
-      Build date: Aug 13 2025
-      Copyright (C) 2025 Microchip Technology Inc.
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /opt/microchip/xc32/v4.60/bin/xc32-g++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      Warning: dinit optimization threshholds not set; dinit may not function
+      /opt/microchip/xc32/v4.60/bin/bin/gcc/pic32mx/8.3.1/../../../../bin/pic32m-ld: warning: cannot find entry symbol _reset; defaulting to 000000009d000000
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task2/_build/Interrupt/CoolConfig/CMakeFiles/4.1.1/CompilerIdCXX/a.out
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/Compiler/GNU-FindBinUtils.cmake:18 (find_program)"
+      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
+      - "CMakeLists.txt:17 (project)"
+    mode: "program"
+    variable: "CMAKE_CXX_COMPILER_AR"
+    description: "A wrapper around 'ar' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "xc32-gcc-ar-8.3"
+      - "xc32-gcc-ar-8"
+      - "xc32-gcc-ar8"
+      - "xc32-gcc-ar"
+    candidate_directories:
+      - "/opt/microchip/xc32/v4.60/bin/"
+      - "/home/vikingur/.mplab/app-finder/apps/ninja/v1.13.1/"
+      - "/home/vikingur/.mplab/app-finder/apps/make/v4.4.1/linux/"
+      - "/home/vikingur/.mplab/app-finder/apps/hexmate/v3.00/dist/linux/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/usr/bin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+    searched_directories:
+      - "/opt/microchip/xc32/v4.60/bin/xc32-gcc-ar-8.3"
+      - "/home/vikingur/.mplab/app-finder/apps/ninja/v1.13.1/xc32-gcc-ar-8.3"
+      - "/home/vikingur/.mplab/app-finder/apps/make/v4.4.1/linux/xc32-gcc-ar-8.3"
+      - "/home/vikingur/.mplab/app-finder/apps/hexmate/v3.00/dist/linux/bin/xc32-gcc-ar-8.3"
+      - "/usr/local/sbin/xc32-gcc-ar-8.3"
+      - "/usr/local/bin/xc32-gcc-ar-8.3"
+      - "/usr/sbin/xc32-gcc-ar-8.3"
+      - "/usr/bin/xc32-gcc-ar-8.3"
+      - "/sbin/xc32-gcc-ar-8.3"
+      - "/bin/xc32-gcc-ar-8.3"
+      - "/usr/games/xc32-gcc-ar-8.3"
+      - "/usr/local/games/xc32-gcc-ar-8.3"
+      - "/snap/bin/xc32-gcc-ar-8.3"
+      - "/opt/microchip/xc32/v4.60/bin/xc32-gcc-ar-8"
+      - "/home/vikingur/.mplab/app-finder/apps/ninja/v1.13.1/xc32-gcc-ar-8"
+      - "/home/vikingur/.mplab/app-finder/apps/make/v4.4.1/linux/xc32-gcc-ar-8"
+      - "/home/vikingur/.mplab/app-finder/apps/hexmate/v3.00/dist/linux/bin/xc32-gcc-ar-8"
+      - "/usr/local/sbin/xc32-gcc-ar-8"
+      - "/usr/local/bin/xc32-gcc-ar-8"
+      - "/usr/sbin/xc32-gcc-ar-8"
+      - "/usr/bin/xc32-gcc-ar-8"
+      - "/sbin/xc32-gcc-ar-8"
+      - "/bin/xc32-gcc-ar-8"
+      - "/usr/games/xc32-gcc-ar-8"
+      - "/usr/local/games/xc32-gcc-ar-8"
+      - "/snap/bin/xc32-gcc-ar-8"
+      - "/opt/microchip/xc32/v4.60/bin/xc32-gcc-ar8"
+      - "/home/vikingur/.mplab/app-finder/apps/ninja/v1.13.1/xc32-gcc-ar8"
+      - "/home/vikingur/.mplab/app-finder/apps/make/v4.4.1/linux/xc32-gcc-ar8"
+      - "/home/vikingur/.mplab/app-finder/apps/hexmate/v3.00/dist/linux/bin/xc32-gcc-ar8"
+      - "/usr/local/sbin/xc32-gcc-ar8"
+      - "/usr/local/bin/xc32-gcc-ar8"
+      - "/usr/sbin/xc32-gcc-ar8"
+      - "/usr/bin/xc32-gcc-ar8"
+      - "/sbin/xc32-gcc-ar8"
+      - "/bin/xc32-gcc-ar8"
+      - "/usr/games/xc32-gcc-ar8"
+      - "/usr/local/games/xc32-gcc-ar8"
+      - "/snap/bin/xc32-gcc-ar8"
+      - "/opt/microchip/xc32/v4.60/bin/xc32-gcc-ar"
+      - "/home/vikingur/.mplab/app-finder/apps/ninja/v1.13.1/xc32-gcc-ar"
+      - "/home/vikingur/.mplab/app-finder/apps/make/v4.4.1/linux/xc32-gcc-ar"
+      - "/home/vikingur/.mplab/app-finder/apps/hexmate/v3.00/dist/linux/bin/xc32-gcc-ar"
+      - "/usr/local/sbin/xc32-gcc-ar"
+      - "/usr/local/bin/xc32-gcc-ar"
+      - "/usr/sbin/xc32-gcc-ar"
+      - "/usr/bin/xc32-gcc-ar"
+      - "/sbin/xc32-gcc-ar"
+      - "/bin/xc32-gcc-ar"
+      - "/usr/games/xc32-gcc-ar"
+      - "/usr/local/games/xc32-gcc-ar"
+      - "/snap/bin/xc32-gcc-ar"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "/home/vikingur/.mplab/app-finder/apps/ninja/v1.13.1"
+        - "/home/vikingur/.mplab/app-finder/apps/make/v4.4.1/linux"
+        - "/home/vikingur/.mplab/app-finder/apps/hexmate/v3.00/dist/linux/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/Compiler/GNU-FindBinUtils.cmake:30 (find_program)"
+      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
+      - "CMakeLists.txt:17 (project)"
+    mode: "program"
+    variable: "CMAKE_CXX_COMPILER_RANLIB"
+    description: "A wrapper around 'ranlib' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "xc32-gcc-ranlib-8.3"
+      - "xc32-gcc-ranlib-8"
+      - "xc32-gcc-ranlib8"
+      - "xc32-gcc-ranlib"
+    candidate_directories:
+      - "/opt/microchip/xc32/v4.60/bin/"
+      - "/home/vikingur/.mplab/app-finder/apps/ninja/v1.13.1/"
+      - "/home/vikingur/.mplab/app-finder/apps/make/v4.4.1/linux/"
+      - "/home/vikingur/.mplab/app-finder/apps/hexmate/v3.00/dist/linux/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/usr/bin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+    searched_directories:
+      - "/opt/microchip/xc32/v4.60/bin/xc32-gcc-ranlib-8.3"
+      - "/home/vikingur/.mplab/app-finder/apps/ninja/v1.13.1/xc32-gcc-ranlib-8.3"
+      - "/home/vikingur/.mplab/app-finder/apps/make/v4.4.1/linux/xc32-gcc-ranlib-8.3"
+      - "/home/vikingur/.mplab/app-finder/apps/hexmate/v3.00/dist/linux/bin/xc32-gcc-ranlib-8.3"
+      - "/usr/local/sbin/xc32-gcc-ranlib-8.3"
+      - "/usr/local/bin/xc32-gcc-ranlib-8.3"
+      - "/usr/sbin/xc32-gcc-ranlib-8.3"
+      - "/usr/bin/xc32-gcc-ranlib-8.3"
+      - "/sbin/xc32-gcc-ranlib-8.3"
+      - "/bin/xc32-gcc-ranlib-8.3"
+      - "/usr/games/xc32-gcc-ranlib-8.3"
+      - "/usr/local/games/xc32-gcc-ranlib-8.3"
+      - "/snap/bin/xc32-gcc-ranlib-8.3"
+      - "/opt/microchip/xc32/v4.60/bin/xc32-gcc-ranlib-8"
+      - "/home/vikingur/.mplab/app-finder/apps/ninja/v1.13.1/xc32-gcc-ranlib-8"
+      - "/home/vikingur/.mplab/app-finder/apps/make/v4.4.1/linux/xc32-gcc-ranlib-8"
+      - "/home/vikingur/.mplab/app-finder/apps/hexmate/v3.00/dist/linux/bin/xc32-gcc-ranlib-8"
+      - "/usr/local/sbin/xc32-gcc-ranlib-8"
+      - "/usr/local/bin/xc32-gcc-ranlib-8"
+      - "/usr/sbin/xc32-gcc-ranlib-8"
+      - "/usr/bin/xc32-gcc-ranlib-8"
+      - "/sbin/xc32-gcc-ranlib-8"
+      - "/bin/xc32-gcc-ranlib-8"
+      - "/usr/games/xc32-gcc-ranlib-8"
+      - "/usr/local/games/xc32-gcc-ranlib-8"
+      - "/snap/bin/xc32-gcc-ranlib-8"
+      - "/opt/microchip/xc32/v4.60/bin/xc32-gcc-ranlib8"
+      - "/home/vikingur/.mplab/app-finder/apps/ninja/v1.13.1/xc32-gcc-ranlib8"
+      - "/home/vikingur/.mplab/app-finder/apps/make/v4.4.1/linux/xc32-gcc-ranlib8"
+      - "/home/vikingur/.mplab/app-finder/apps/hexmate/v3.00/dist/linux/bin/xc32-gcc-ranlib8"
+      - "/usr/local/sbin/xc32-gcc-ranlib8"
+      - "/usr/local/bin/xc32-gcc-ranlib8"
+      - "/usr/sbin/xc32-gcc-ranlib8"
+      - "/usr/bin/xc32-gcc-ranlib8"
+      - "/sbin/xc32-gcc-ranlib8"
+      - "/bin/xc32-gcc-ranlib8"
+      - "/usr/games/xc32-gcc-ranlib8"
+      - "/usr/local/games/xc32-gcc-ranlib8"
+      - "/snap/bin/xc32-gcc-ranlib8"
+      - "/opt/microchip/xc32/v4.60/bin/xc32-gcc-ranlib"
+      - "/home/vikingur/.mplab/app-finder/apps/ninja/v1.13.1/xc32-gcc-ranlib"
+      - "/home/vikingur/.mplab/app-finder/apps/make/v4.4.1/linux/xc32-gcc-ranlib"
+      - "/home/vikingur/.mplab/app-finder/apps/hexmate/v3.00/dist/linux/bin/xc32-gcc-ranlib"
+      - "/usr/local/sbin/xc32-gcc-ranlib"
+      - "/usr/local/bin/xc32-gcc-ranlib"
+      - "/usr/sbin/xc32-gcc-ranlib"
+      - "/usr/bin/xc32-gcc-ranlib"
+      - "/sbin/xc32-gcc-ranlib"
+      - "/bin/xc32-gcc-ranlib"
+      - "/usr/games/xc32-gcc-ranlib"
+      - "/usr/local/games/xc32-gcc-ranlib"
+      - "/snap/bin/xc32-gcc-ranlib"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "/home/vikingur/.mplab/app-finder/apps/ninja/v1.13.1"
+        - "/home/vikingur/.mplab/app-finder/apps/make/v4.4.1/linux"
+        - "/home/vikingur/.mplab/app-finder/apps/hexmate/v3.00/dist/linux/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
   -
     kind: "message-v1"
     backtrace:
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:1303 (message)"
+      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:1290 (message)"
       - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineASMCompiler.cmake:170 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
       - "CMakeLists.txt:17 (project)"
     message: |
-      Checking whether the ASM compiler is Clang using "--version" did not match "(clang version)":
-      Microchip MPLAB XC8 C Compiler V3.10
-      Build date: Aug 13 2025
-      Copyright (C) 2025 Microchip Technology Inc.
+      Checking whether the ASM compiler is GNU using "--version" matched "(GNU assembler)|(GCC)|(Free Software Foundation)":
+      pic32m-gcc (Microchip XC32 Compiler v4.60) 8.3.1 Build date: Feb 19 2025
+      Copyright (C) 2018 Free Software Foundation, Inc.
+      This is free software; see the source for copying conditions.  There is NO
+      warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+      
   -
-    kind: "message-v1"
+    kind: "find-v1"
     backtrace:
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:1303 (message)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineASMCompiler.cmake:170 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/Compiler/GNU-FindBinUtils.cmake:18 (find_program)"
+      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineASMCompiler.cmake:268 (include)"
       - "CMakeLists.txt:17 (project)"
-    message: |
-      Checking whether the ASM compiler is ARMClang using "--version" did not match "armclang":
-      Microchip MPLAB XC8 C Compiler V3.10
-      Build date: Aug 13 2025
-      Copyright (C) 2025 Microchip Technology Inc.
+    mode: "program"
+    variable: "CMAKE_ASM_COMPILER_AR"
+    description: "A wrapper around 'ar' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "xc32-gcc-ar-"
+      - "xc32-gcc-ar-"
+      - "xc32-gcc-ar"
+      - "xc32-gcc-ar"
+    candidate_directories:
+      - "/opt/microchip/xc32/v4.60/bin/"
+      - "/home/vikingur/.mplab/app-finder/apps/ninja/v1.13.1/"
+      - "/home/vikingur/.mplab/app-finder/apps/make/v4.4.1/linux/"
+      - "/home/vikingur/.mplab/app-finder/apps/hexmate/v3.00/dist/linux/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/usr/bin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+    searched_directories:
+      - "/opt/microchip/xc32/v4.60/bin/xc32-gcc-ar-"
+      - "/home/vikingur/.mplab/app-finder/apps/ninja/v1.13.1/xc32-gcc-ar-"
+      - "/home/vikingur/.mplab/app-finder/apps/make/v4.4.1/linux/xc32-gcc-ar-"
+      - "/home/vikingur/.mplab/app-finder/apps/hexmate/v3.00/dist/linux/bin/xc32-gcc-ar-"
+      - "/usr/local/sbin/xc32-gcc-ar-"
+      - "/usr/local/bin/xc32-gcc-ar-"
+      - "/usr/sbin/xc32-gcc-ar-"
+      - "/usr/bin/xc32-gcc-ar-"
+      - "/sbin/xc32-gcc-ar-"
+      - "/bin/xc32-gcc-ar-"
+      - "/usr/games/xc32-gcc-ar-"
+      - "/usr/local/games/xc32-gcc-ar-"
+      - "/snap/bin/xc32-gcc-ar-"
+      - "/opt/microchip/xc32/v4.60/bin/xc32-gcc-ar-"
+      - "/home/vikingur/.mplab/app-finder/apps/ninja/v1.13.1/xc32-gcc-ar-"
+      - "/home/vikingur/.mplab/app-finder/apps/make/v4.4.1/linux/xc32-gcc-ar-"
+      - "/home/vikingur/.mplab/app-finder/apps/hexmate/v3.00/dist/linux/bin/xc32-gcc-ar-"
+      - "/usr/local/sbin/xc32-gcc-ar-"
+      - "/usr/local/bin/xc32-gcc-ar-"
+      - "/usr/sbin/xc32-gcc-ar-"
+      - "/usr/bin/xc32-gcc-ar-"
+      - "/sbin/xc32-gcc-ar-"
+      - "/bin/xc32-gcc-ar-"
+      - "/usr/games/xc32-gcc-ar-"
+      - "/usr/local/games/xc32-gcc-ar-"
+      - "/snap/bin/xc32-gcc-ar-"
+      - "/opt/microchip/xc32/v4.60/bin/xc32-gcc-ar"
+      - "/home/vikingur/.mplab/app-finder/apps/ninja/v1.13.1/xc32-gcc-ar"
+      - "/home/vikingur/.mplab/app-finder/apps/make/v4.4.1/linux/xc32-gcc-ar"
+      - "/home/vikingur/.mplab/app-finder/apps/hexmate/v3.00/dist/linux/bin/xc32-gcc-ar"
+      - "/usr/local/sbin/xc32-gcc-ar"
+      - "/usr/local/bin/xc32-gcc-ar"
+      - "/usr/sbin/xc32-gcc-ar"
+      - "/usr/bin/xc32-gcc-ar"
+      - "/sbin/xc32-gcc-ar"
+      - "/bin/xc32-gcc-ar"
+      - "/usr/games/xc32-gcc-ar"
+      - "/usr/local/games/xc32-gcc-ar"
+      - "/snap/bin/xc32-gcc-ar"
+      - "/opt/microchip/xc32/v4.60/bin/xc32-gcc-ar"
+      - "/home/vikingur/.mplab/app-finder/apps/ninja/v1.13.1/xc32-gcc-ar"
+      - "/home/vikingur/.mplab/app-finder/apps/make/v4.4.1/linux/xc32-gcc-ar"
+      - "/home/vikingur/.mplab/app-finder/apps/hexmate/v3.00/dist/linux/bin/xc32-gcc-ar"
+      - "/usr/local/sbin/xc32-gcc-ar"
+      - "/usr/local/bin/xc32-gcc-ar"
+      - "/usr/sbin/xc32-gcc-ar"
+      - "/usr/bin/xc32-gcc-ar"
+      - "/sbin/xc32-gcc-ar"
+      - "/bin/xc32-gcc-ar"
+      - "/usr/games/xc32-gcc-ar"
+      - "/usr/local/games/xc32-gcc-ar"
+      - "/snap/bin/xc32-gcc-ar"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "/home/vikingur/.mplab/app-finder/apps/ninja/v1.13.1"
+        - "/home/vikingur/.mplab/app-finder/apps/make/v4.4.1/linux"
+        - "/home/vikingur/.mplab/app-finder/apps/hexmate/v3.00/dist/linux/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
   -
-    kind: "message-v1"
+    kind: "find-v1"
     backtrace:
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:1303 (message)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineASMCompiler.cmake:170 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/Compiler/GNU-FindBinUtils.cmake:30 (find_program)"
+      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineASMCompiler.cmake:268 (include)"
       - "CMakeLists.txt:17 (project)"
-    message: |
-      Checking whether the ASM compiler is OrangeC using "--version" did not match "occ \\(OrangeC\\) Version":
-      Microchip MPLAB XC8 C Compiler V3.10
-      Build date: Aug 13 2025
-      Copyright (C) 2025 Microchip Technology Inc.
-  -
-    kind: "message-v1"
-    backtrace:
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:1303 (message)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineASMCompiler.cmake:170 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
-      - "CMakeLists.txt:17 (project)"
-    message: |
-      Checking whether the ASM compiler is HP using "-V" did not match "HP C":
-      (2042) no target device specified; use the -mcpu option to specify a target device
-  -
-    kind: "message-v1"
-    backtrace:
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:1303 (message)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineASMCompiler.cmake:170 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
-      - "CMakeLists.txt:17 (project)"
-    message: |
-      Checking whether the ASM compiler is Intel using "--version" did not match "(ICC)":
-      Microchip MPLAB XC8 C Compiler V3.10
-      Build date: Aug 13 2025
-      Copyright (C) 2025 Microchip Technology Inc.
-  -
-    kind: "message-v1"
-    backtrace:
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:1303 (message)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineASMCompiler.cmake:170 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
-      - "CMakeLists.txt:17 (project)"
-    message: |
-      Checking whether the ASM compiler is IntelLLVM using "--version" did not match "(Intel[^
-      ]+oneAPI)":
-      Microchip MPLAB XC8 C Compiler V3.10
-      Build date: Aug 13 2025
-      Copyright (C) 2025 Microchip Technology Inc.
-  -
-    kind: "message-v1"
-    backtrace:
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:1303 (message)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineASMCompiler.cmake:170 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
-      - "CMakeLists.txt:17 (project)"
-    message: |
-      Checking whether the ASM compiler is SunPro using "-V" did not match "Sun C":
-      (2042) no target device specified; use the -mcpu option to specify a target device
-  -
-    kind: "message-v1"
-    backtrace:
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:1303 (message)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineASMCompiler.cmake:170 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
-      - "CMakeLists.txt:17 (project)"
-    message: |
-      Checking whether the ASM compiler is XL using "-qversion" did not match "XL C":
-      (2042) no target device specified; use the -mcpu option to specify a target device
-  -
-    kind: "message-v1"
-    backtrace:
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:1303 (message)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineASMCompiler.cmake:170 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
-      - "CMakeLists.txt:17 (project)"
-    message: |
-      Checking whether the ASM compiler is MSVC using "-?" did not match "Microsoft":
-      (2042) no target device specified; use the -mcpu option to specify a target device
-  -
-    kind: "message-v1"
-    backtrace:
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:1303 (message)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineASMCompiler.cmake:170 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
-      - "CMakeLists.txt:17 (project)"
-    message: |
-      Checking whether the ASM compiler is TI using "-h" did not match "Texas Instruments":
-      (2042) no target device specified; use the -mcpu option to specify a target device
-  -
-    kind: "message-v1"
-    backtrace:
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:1303 (message)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineASMCompiler.cmake:170 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
-      - "CMakeLists.txt:17 (project)"
-    message: |
-      Checking whether the ASM compiler is TIClang using "--version" did not match "(TI (.*) Clang Compiler)":
-      Microchip MPLAB XC8 C Compiler V3.10
-      Build date: Aug 13 2025
-      Copyright (C) 2025 Microchip Technology Inc.
-  -
-    kind: "message-v1"
-    backtrace:
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:1303 (message)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineASMCompiler.cmake:170 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
-      - "CMakeLists.txt:17 (project)"
-    message: |
-      Checking whether the ASM compiler is IAR using "" did not match "IAR Assembler":
-      (2042) no target device specified; use the -mcpu option to specify a target device
-  -
-    kind: "message-v1"
-    backtrace:
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:1303 (message)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineASMCompiler.cmake:170 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
-      - "CMakeLists.txt:17 (project)"
-    message: |
-      Checking whether the ASM compiler is Diab using "-V" did not match "Wind River Systems":
-      (2042) no target device specified; use the -mcpu option to specify a target device
-  -
-    kind: "message-v1"
-    backtrace:
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:1303 (message)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineASMCompiler.cmake:170 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
-      - "CMakeLists.txt:17 (project)"
-    message: |
-      Checking whether the ASM compiler is ARMCC using "" did not match "(ARM Compiler)|(ARM Assembler)|(Arm Compiler)":
-      (2042) no target device specified; use the -mcpu option to specify a target device
-  -
-    kind: "message-v1"
-    backtrace:
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:1303 (message)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineASMCompiler.cmake:170 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
-      - "CMakeLists.txt:17 (project)"
-    message: |
-      Checking whether the ASM compiler is NASM using "-v" did not match "(NASM version)":
-      (2042) no target device specified; use the -mcpu option to specify a target device
-  -
-    kind: "message-v1"
-    backtrace:
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:1303 (message)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineASMCompiler.cmake:170 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
-      - "CMakeLists.txt:17 (project)"
-    message: |
-      Checking whether the ASM compiler is YASM using "--version" did not match "(yasm)":
-      Microchip MPLAB XC8 C Compiler V3.10
-      Build date: Aug 13 2025
-      Copyright (C) 2025 Microchip Technology Inc.
-  -
-    kind: "message-v1"
-    backtrace:
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:1303 (message)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineASMCompiler.cmake:170 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
-      - "CMakeLists.txt:17 (project)"
-    message: |
-      Checking whether the ASM compiler is ADSP using "-version" did not match "Analog Devices":
-      (2042) no target device specified; use the -mcpu option to specify a target device
-  -
-    kind: "message-v1"
-    backtrace:
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:1303 (message)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineASMCompiler.cmake:170 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
-      - "CMakeLists.txt:17 (project)"
-    message: |
-      Checking whether the ASM compiler is QCC using "-V" did not match "gcc_nto":
-      (2042) no target device specified; use the -mcpu option to specify a target device
-  -
-    kind: "message-v1"
-    backtrace:
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:1303 (message)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineASMCompiler.cmake:170 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
-      - "CMakeLists.txt:17 (project)"
-    message: |
-      Checking whether the ASM compiler is Tasking using "--version" did not match "TASKING":
-      Microchip MPLAB XC8 C Compiler V3.10
-      Build date: Aug 13 2025
-      Copyright (C) 2025 Microchip Technology Inc.
-  -
-    kind: "message-v1"
-    backtrace:
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:1303 (message)"
-      - "/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/share/cmake-4.1/Modules/CMakeDetermineASMCompiler.cmake:170 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
-      - "CMakeLists.txt:17 (project)"
-    message: |
-      Checking whether the ASM compiler is Renesas using "-v" did not match "(RX Family C/C\\+\\+ Compiler)|(RL78 Family Compiler)|(RH850 Family Compiler)":
-      (2042) no target device specified; use the -mcpu option to specify a target device
+    mode: "program"
+    variable: "CMAKE_ASM_COMPILER_RANLIB"
+    description: "A wrapper around 'ranlib' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "xc32-gcc-ranlib-"
+      - "xc32-gcc-ranlib-"
+      - "xc32-gcc-ranlib"
+      - "xc32-gcc-ranlib"
+    candidate_directories:
+      - "/opt/microchip/xc32/v4.60/bin/"
+      - "/home/vikingur/.mplab/app-finder/apps/ninja/v1.13.1/"
+      - "/home/vikingur/.mplab/app-finder/apps/make/v4.4.1/linux/"
+      - "/home/vikingur/.mplab/app-finder/apps/hexmate/v3.00/dist/linux/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/usr/bin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+    searched_directories:
+      - "/opt/microchip/xc32/v4.60/bin/xc32-gcc-ranlib-"
+      - "/home/vikingur/.mplab/app-finder/apps/ninja/v1.13.1/xc32-gcc-ranlib-"
+      - "/home/vikingur/.mplab/app-finder/apps/make/v4.4.1/linux/xc32-gcc-ranlib-"
+      - "/home/vikingur/.mplab/app-finder/apps/hexmate/v3.00/dist/linux/bin/xc32-gcc-ranlib-"
+      - "/usr/local/sbin/xc32-gcc-ranlib-"
+      - "/usr/local/bin/xc32-gcc-ranlib-"
+      - "/usr/sbin/xc32-gcc-ranlib-"
+      - "/usr/bin/xc32-gcc-ranlib-"
+      - "/sbin/xc32-gcc-ranlib-"
+      - "/bin/xc32-gcc-ranlib-"
+      - "/usr/games/xc32-gcc-ranlib-"
+      - "/usr/local/games/xc32-gcc-ranlib-"
+      - "/snap/bin/xc32-gcc-ranlib-"
+      - "/opt/microchip/xc32/v4.60/bin/xc32-gcc-ranlib-"
+      - "/home/vikingur/.mplab/app-finder/apps/ninja/v1.13.1/xc32-gcc-ranlib-"
+      - "/home/vikingur/.mplab/app-finder/apps/make/v4.4.1/linux/xc32-gcc-ranlib-"
+      - "/home/vikingur/.mplab/app-finder/apps/hexmate/v3.00/dist/linux/bin/xc32-gcc-ranlib-"
+      - "/usr/local/sbin/xc32-gcc-ranlib-"
+      - "/usr/local/bin/xc32-gcc-ranlib-"
+      - "/usr/sbin/xc32-gcc-ranlib-"
+      - "/usr/bin/xc32-gcc-ranlib-"
+      - "/sbin/xc32-gcc-ranlib-"
+      - "/bin/xc32-gcc-ranlib-"
+      - "/usr/games/xc32-gcc-ranlib-"
+      - "/usr/local/games/xc32-gcc-ranlib-"
+      - "/snap/bin/xc32-gcc-ranlib-"
+      - "/opt/microchip/xc32/v4.60/bin/xc32-gcc-ranlib"
+      - "/home/vikingur/.mplab/app-finder/apps/ninja/v1.13.1/xc32-gcc-ranlib"
+      - "/home/vikingur/.mplab/app-finder/apps/make/v4.4.1/linux/xc32-gcc-ranlib"
+      - "/home/vikingur/.mplab/app-finder/apps/hexmate/v3.00/dist/linux/bin/xc32-gcc-ranlib"
+      - "/usr/local/sbin/xc32-gcc-ranlib"
+      - "/usr/local/bin/xc32-gcc-ranlib"
+      - "/usr/sbin/xc32-gcc-ranlib"
+      - "/usr/bin/xc32-gcc-ranlib"
+      - "/sbin/xc32-gcc-ranlib"
+      - "/bin/xc32-gcc-ranlib"
+      - "/usr/games/xc32-gcc-ranlib"
+      - "/usr/local/games/xc32-gcc-ranlib"
+      - "/snap/bin/xc32-gcc-ranlib"
+      - "/opt/microchip/xc32/v4.60/bin/xc32-gcc-ranlib"
+      - "/home/vikingur/.mplab/app-finder/apps/ninja/v1.13.1/xc32-gcc-ranlib"
+      - "/home/vikingur/.mplab/app-finder/apps/make/v4.4.1/linux/xc32-gcc-ranlib"
+      - "/home/vikingur/.mplab/app-finder/apps/hexmate/v3.00/dist/linux/bin/xc32-gcc-ranlib"
+      - "/usr/local/sbin/xc32-gcc-ranlib"
+      - "/usr/local/bin/xc32-gcc-ranlib"
+      - "/usr/sbin/xc32-gcc-ranlib"
+      - "/usr/bin/xc32-gcc-ranlib"
+      - "/sbin/xc32-gcc-ranlib"
+      - "/bin/xc32-gcc-ranlib"
+      - "/usr/games/xc32-gcc-ranlib"
+      - "/usr/local/games/xc32-gcc-ranlib"
+      - "/snap/bin/xc32-gcc-ranlib"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "/home/vikingur/.mplab/app-finder/apps/ninja/v1.13.1"
+        - "/home/vikingur/.mplab/app-finder/apps/make/v4.4.1/linux"
+        - "/home/vikingur/.mplab/app-finder/apps/hexmate/v3.00/dist/linux/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
 ...

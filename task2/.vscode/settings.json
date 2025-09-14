@@ -1,8 +1,8 @@
 {
     "mplab.clangd.arguments": [
-        "--compile-commands-dir=${workspaceFolder}/_build/Interrupt/default"
+        "--compile-commands-dir=${workspaceFolder}/_build/Interrupt/CoolConfig"
     ],
-    "mplab.clangd.path": "/opt/microchip/xc8/v3.10/bin/xc8-clangd",
+    "mplab.clangd.path": "/opt/microchip/xc32/v4.60/bin/xc32-clangd",
     "memory-inspector.debugTypes": [
         "arm-debugger",
         "embedded-debug",

@@ -14,18 +14,18 @@
 #############################################
 # Rule for compiling C files.
 
-rule C_COMPILER__Interrupt_CoolConfig_config_1_toolchain_compile_unscanned_
+rule C_COMPILER__Interrupt_CoolConfig_default_XC32_compile_unscanned_
   depfile = $DEP_FILE
   deps = gcc
-  command = ${LAUNCHER}${CODE_CHECK}/opt/microchip/xc8/v3.10/bin/xc8-cc $DEFINES $INCLUDES $FLAGS -o $out -c $in
+  command = ${LAUNCHER}${CODE_CHECK}/opt/microchip/xc32/v4.60/bin/xc32-gcc $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building C object $out
 
 
 #############################################
 # Rule for linking C executable.
 
-rule C_EXECUTABLE_LINKER__Interrupt_CoolConfig_image_zsdIyys__
-  command = $PRE_LINK && /opt/microchip/xc8/v3.10/bin/xc8-cc $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
+rule C_EXECUTABLE_LINKER__Interrupt_CoolConfig_image_wj8dWaCn_
+  command = $PRE_LINK && /opt/microchip/xc32/v4.60/bin/xc32-gcc $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking C executable $TARGET_FILE
   restat = $RESTAT
 

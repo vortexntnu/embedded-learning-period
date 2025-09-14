@@ -15,50 +15,100 @@
 ########################
 
 //Path to a program.
-CMAKE_ADDR2LINE:FILEPATH=CMAKE_ADDR2LINE-NOTFOUND
+CMAKE_ADDR2LINE:FILEPATH=/opt/microchip/xc32/v4.60/bin/xc32-addr2line
 
 //Path to the archiver binary.
-CMAKE_AR:FILEPATH=/opt/microchip/xc8/v3.10/bin/xc8-ar
+CMAKE_AR:FILEPATH=/opt/microchip/xc32/v4.60/bin/xc32-ar
 
 //ASM compiler
-CMAKE_ASM_COMPILER:STRING=/opt/microchip/xc8/v3.10/bin/xc8-cc
+CMAKE_ASM_COMPILER:STRING=/opt/microchip/xc32/v4.60/bin/xc32-gcc
+
+//A wrapper around 'ar' adding the appropriate '--plugin' option
+// for the GCC compiler
+CMAKE_ASM_COMPILER_AR:FILEPATH=CMAKE_ASM_COMPILER_AR-NOTFOUND
+
+//A wrapper around 'ranlib' adding the appropriate '--plugin' option
+// for the GCC compiler
+CMAKE_ASM_COMPILER_RANLIB:FILEPATH=CMAKE_ASM_COMPILER_RANLIB-NOTFOUND
 
 //Flags used by the ASM compiler during all build types.
 CMAKE_ASM_FLAGS:STRING=
 
 //Flags used by the ASM compiler during DEBUG builds.
-CMAKE_ASM_FLAGS_DEBUG:STRING=
+CMAKE_ASM_FLAGS_DEBUG:STRING=-g
 
 //Flags used by the ASM compiler during MINSIZEREL builds.
-CMAKE_ASM_FLAGS_MINSIZEREL:STRING=
+CMAKE_ASM_FLAGS_MINSIZEREL:STRING=-Os -DNDEBUG
 
 //Flags used by the ASM compiler during RELEASE builds.
-CMAKE_ASM_FLAGS_RELEASE:STRING=
+CMAKE_ASM_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
 
 //Flags used by the ASM compiler during RELWITHDEBINFO builds.
-CMAKE_ASM_FLAGS_RELWITHDEBINFO:STRING=
+CMAKE_ASM_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
 //Choose the type of build, options are: None Debug Release RelWithDebInfo
 // MinSizeRel ...
 CMAKE_BUILD_TYPE:STRING=
 
+//CXX compiler
+CMAKE_CXX_COMPILER:STRING=/opt/microchip/xc32/v4.60/bin/xc32-g++
+
+//A wrapper around 'ar' adding the appropriate '--plugin' option
+// for the GCC compiler
+CMAKE_CXX_COMPILER_AR:FILEPATH=CMAKE_CXX_COMPILER_AR-NOTFOUND
+
+//A wrapper around 'ranlib' adding the appropriate '--plugin' option
+// for the GCC compiler
+CMAKE_CXX_COMPILER_RANLIB:FILEPATH=CMAKE_CXX_COMPILER_RANLIB-NOTFOUND
+
+//Tell CMake that the compiler works, but cannot be run during
+// the configuration stage
+CMAKE_CXX_COMPILER_WORKS:BOOL=YES
+
+//Flags used by the CXX compiler during all build types.
+CMAKE_CXX_FLAGS:STRING=
+
+//Flags used by the CXX compiler during DEBUG builds.
+CMAKE_CXX_FLAGS_DEBUG:STRING=-g
+
+//Flags used by the CXX compiler during MINSIZEREL builds.
+CMAKE_CXX_FLAGS_MINSIZEREL:STRING=-Os -DNDEBUG
+
+//Flags used by the CXX compiler during RELEASE builds.
+CMAKE_CXX_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
+
+//Flags used by the CXX compiler during RELWITHDEBINFO builds.
+CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
+
 //C compiler
-CMAKE_C_COMPILER:STRING=/opt/microchip/xc8/v3.10/bin/xc8-cc
+CMAKE_C_COMPILER:STRING=/opt/microchip/xc32/v4.60/bin/xc32-gcc
+
+//A wrapper around 'ar' adding the appropriate '--plugin' option
+// for the GCC compiler
+CMAKE_C_COMPILER_AR:FILEPATH=CMAKE_C_COMPILER_AR-NOTFOUND
+
+//A wrapper around 'ranlib' adding the appropriate '--plugin' option
+// for the GCC compiler
+CMAKE_C_COMPILER_RANLIB:FILEPATH=CMAKE_C_COMPILER_RANLIB-NOTFOUND
+
+//Tell CMake that the compiler works, but cannot be run during
+// the configuration stage
+CMAKE_C_COMPILER_WORKS:BOOL=YES
 
 //Flags used by the C compiler during all build types.
 CMAKE_C_FLAGS:STRING=
 
 //Flags used by the C compiler during DEBUG builds.
-CMAKE_C_FLAGS_DEBUG:STRING=
+CMAKE_C_FLAGS_DEBUG:STRING=-g
 
 //Flags used by the C compiler during MINSIZEREL builds.
-CMAKE_C_FLAGS_MINSIZEREL:STRING=
+CMAKE_C_FLAGS_MINSIZEREL:STRING=-Os -DNDEBUG
 
 //Flags used by the C compiler during RELEASE builds.
-CMAKE_C_FLAGS_RELEASE:STRING=
+CMAKE_C_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
 
 //Flags used by the C compiler during RELWITHDEBINFO builds.
-CMAKE_C_FLAGS_RELWITHDEBINFO:STRING=
+CMAKE_C_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
 //Path to a program.
 CMAKE_DLLTOOL:FILEPATH=CMAKE_DLLTOOL-NOTFOUND
@@ -91,7 +141,7 @@ CMAKE_FIND_PACKAGE_REDIRECTS_DIR:STATIC=/home/vikingur/Vortex/Embedded/Oppstart/
 CMAKE_INSTALL_PREFIX:PATH=/usr/local
 
 //Path to a program.
-CMAKE_LINKER:FILEPATH=CMAKE_LINKER-NOTFOUND
+CMAKE_LINKER:FILEPATH=/opt/microchip/xc32/v4.60/bin/xc32-ld
 
 //Program used to build from build.ninja files.
 CMAKE_MAKE_PROGRAM:FILEPATH=/home/vikingur/.mplab/app-finder/apps/ninja/v1.13.1/ninja
@@ -117,13 +167,13 @@ CMAKE_MODULE_LINKER_FLAGS_RELEASE:STRING=
 CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
 //Path to a program.
-CMAKE_NM:FILEPATH=CMAKE_NM-NOTFOUND
+CMAKE_NM:FILEPATH=/opt/microchip/xc32/v4.60/bin/xc32-nm
 
 //Path to a program.
-CMAKE_OBJCOPY:FILEPATH=CMAKE_OBJCOPY-NOTFOUND
+CMAKE_OBJCOPY:FILEPATH=/opt/microchip/xc32/v4.60/bin/xc32-objcopy
 
 //Path to a program.
-CMAKE_OBJDUMP:FILEPATH=CMAKE_OBJDUMP-NOTFOUND
+CMAKE_OBJDUMP:FILEPATH=/opt/microchip/xc32/v4.60/bin/xc32-objdump
 
 //Value Computed by CMake
 CMAKE_PROJECT_COMPAT_VERSION:STATIC=
@@ -153,7 +203,10 @@ CMAKE_PROJECT_VERSION_PATCH:STATIC=
 CMAKE_PROJECT_VERSION_TWEAK:STATIC=
 
 //Path to a program.
-CMAKE_READELF:FILEPATH=CMAKE_READELF-NOTFOUND
+CMAKE_RANLIB:FILEPATH=/opt/microchip/xc32/v4.60/bin/xc32-ranlib
+
+//Path to a program.
+CMAKE_READELF:FILEPATH=/opt/microchip/xc32/v4.60/bin/xc32-readelf
 
 //Flags used by the linker during the creation of shared libraries
 // during all build types.
@@ -203,7 +256,7 @@ CMAKE_STATIC_LINKER_FLAGS_RELEASE:STRING=
 CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
 //Path to a program.
-CMAKE_STRIP:FILEPATH=CMAKE_STRIP-NOTFOUND
+CMAKE_STRIP:FILEPATH=/opt/microchip/xc32/v4.60/bin/xc32-strip
 
 //Path to a program.
 CMAKE_TAPI:FILEPATH=CMAKE_TAPI-NOTFOUND
@@ -230,28 +283,44 @@ Interrupt_CoolConfig_project_IS_TOP_LEVEL:STATIC=ON
 Interrupt_CoolConfig_project_SOURCE_DIR:STATIC=/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task2/cmake/Interrupt/CoolConfig
 
 //Legacy variable from MPLAB X pointing to the archiver binary.
-MP_AR:FILEPATH=/opt/microchip/xc8/v3.10/bin/xc8-ar
+MP_AR:FILEPATH=/opt/microchip/xc32/v4.60/bin/xc32-ar
 
 //Legacy variable from MPLAB X pointing to the archiver base directory
-MP_AR_DIR:PATH=/opt/microchip/xc8/v3.10/bin
+MP_AR_DIR:PATH=/opt/microchip/xc32/v4.60/bin
 
 //Legacy variable from MPLAB X pointing to the assembler
-MP_AS:PATH=/opt/microchip/xc8/v3.10/bin/xc8-cc
+MP_AS:PATH=/opt/microchip/xc32/v4.60/bin/xc32-gcc
 
 //Legacy variable from MPLAB X pointing to the assembler base directory
-MP_AS_DIR:PATH=/opt/microchip/xc8/v3.10/bin
+MP_AS_DIR:PATH=/opt/microchip/xc32/v4.60/bin
+
+//Legacy variable from MPLAB X pointing to the bin2hex binary.
+MP_BIN2HEX:FILEPATH=/opt/microchip/xc32/v4.60/bin/xc32-bin2hex
 
 //Legacy variable from MPLAB X pointing to the compiler
-MP_CC:PATH=/opt/microchip/xc8/v3.10/bin/xc8-cc
+MP_CC:PATH=/opt/microchip/xc32/v4.60/bin/xc32-gcc
 
 //Legacy variable from MPLAB X pointing to the compiler base directory
-MP_CC_DIR:PATH=/opt/microchip/xc8/v3.10/bin
+MP_CC_DIR:PATH=/opt/microchip/xc32/v4.60/bin
+
+//Legacy variable from MPLAB X pointing to the c++ compiler
+MP_CPPC:PATH=/opt/microchip/xc32/v4.60/bin/xc32-g++
+
+//Legacy variable from MPLAB X pointing to the c++ compiler base
+// directory
+MP_CPPC_DIR:PATH=/opt/microchip/xc32/v4.60/bin
 
 //Legacy variable from MPLAB X pointing to the linker binary.
-MP_LD:FILEPATH=/opt/microchip/xc8/v3.10/bin/xc8-cc
+MP_LD:FILEPATH=/opt/microchip/xc32/v4.60/bin/xc32-ld
 
 //Legacy variable from MPLAB X pointing to the linker base directory
-MP_LD_DIR:PATH=/opt/microchip/xc8/v3.10/bin
+MP_LD_DIR:PATH=/opt/microchip/xc32/v4.60/bin
+
+//Path to objcopy executable
+OBJCOPY:FILEPATH=/opt/microchip/xc32/v4.60/bin/xc32-objcopy
+
+//Path to objdump executable
+OBJDUMP:FILEPATH=/opt/microchip/xc32/v4.60/bin/xc32-objdump
 
 //Path to the root of a pack repository.
 PACK_REPO_PATH:PATH=/home/vikingur/.mchp_packs
@@ -267,7 +336,11 @@ CMAKE_ADDR2LINE-ADVANCED:INTERNAL=1
 CMAKE_AR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_ASM_COMPILER
 CMAKE_ASM_COMPILER-ADVANCED:INTERNAL=1
-CMAKE_ASM_COMPILER_WORKS:INTERNAL=0
+//ADVANCED property for variable: CMAKE_ASM_COMPILER_AR
+CMAKE_ASM_COMPILER_AR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_ASM_COMPILER_RANLIB
+CMAKE_ASM_COMPILER_RANLIB-ADVANCED:INTERNAL=1
+CMAKE_ASM_COMPILER_WORKS:INTERNAL=1
 //ADVANCED property for variable: CMAKE_ASM_FLAGS
 CMAKE_ASM_FLAGS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_ASM_FLAGS_DEBUG
@@ -292,8 +365,28 @@ CMAKE_COMMAND:INTERNAL=/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-
 CMAKE_CPACK_COMMAND:INTERNAL=/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/bin/cpack
 //Path to ctest program executable.
 CMAKE_CTEST_COMMAND:INTERNAL=/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/bin/ctest
+//ADVANCED property for variable: CMAKE_CXX_COMPILER
+CMAKE_CXX_COMPILER-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_CXX_COMPILER_AR
+CMAKE_CXX_COMPILER_AR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_CXX_COMPILER_RANLIB
+CMAKE_CXX_COMPILER_RANLIB-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_CXX_FLAGS
+CMAKE_CXX_FLAGS-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_CXX_FLAGS_DEBUG
+CMAKE_CXX_FLAGS_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_CXX_FLAGS_MINSIZEREL
+CMAKE_CXX_FLAGS_MINSIZEREL-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_CXX_FLAGS_RELEASE
+CMAKE_CXX_FLAGS_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_CXX_FLAGS_RELWITHDEBINFO
+CMAKE_CXX_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_C_COMPILER
 CMAKE_C_COMPILER-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_C_COMPILER_AR
+CMAKE_C_COMPILER_AR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_C_COMPILER_RANLIB
+CMAKE_C_COMPILER_RANLIB-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_C_FLAGS
 CMAKE_C_FLAGS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_C_FLAGS_DEBUG
@@ -309,7 +402,7 @@ CMAKE_DLLTOOL-ADVANCED:INTERNAL=1
 //Path to cache edit program executable.
 CMAKE_EDIT_COMMAND:INTERNAL=/home/vikingur/.mplab/app-finder/apps/cmake/v4.1.1/cmake-4.1.1-linux-x86_64/bin/ccmake
 //Executable file format
-CMAKE_EXECUTABLE_FORMAT:INTERNAL=Unknown
+CMAKE_EXECUTABLE_FORMAT:INTERNAL=ELF
 //ADVANCED property for variable: CMAKE_EXE_LINKER_FLAGS
 CMAKE_EXE_LINKER_FLAGS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_EXE_LINKER_FLAGS_DEBUG
@@ -363,8 +456,6 @@ CMAKE_OBJDUMP-ADVANCED:INTERNAL=1
 CMAKE_PLATFORM_INFO_INITIALIZED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_RANLIB
 CMAKE_RANLIB-ADVANCED:INTERNAL=1
-//noop for ranlib
-CMAKE_RANLIB:INTERNAL=:
 //ADVANCED property for variable: CMAKE_READELF
 CMAKE_READELF-ADVANCED:INTERNAL=1
 //Path to CMake installation.

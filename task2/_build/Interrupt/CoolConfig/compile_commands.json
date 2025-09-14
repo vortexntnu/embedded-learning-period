@@ -1,8 +1,8 @@
 [
 {
   "directory": "/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task2/_build/Interrupt/CoolConfig",
-  "command": "/opt/microchip/xc8/v3.10/bin/xc8-cc -DXPRJ_CoolConfig=CoolConfig -D__ATSAME51J20A__ -D__DEBUG=1 -c -mcpu=ATSAME51J20A -mdfp=/home/vikingur/.mchp_packs/Microchip/SAME51_DFP/3.8.253 -fno-short-double -fno-short-float -O0 -maddrqual=ignore -mwarn=-3 -msummary=-psect,-class,+mem,-hex,-file -ginhx32 -Wl,--data-init -mno-keep-startup -mno-download -mno-default-config-bits -std=c99 -gdwarf-3 -mstack=compiled:auto -o CMakeFiles/Interrupt_CoolConfig_config_1_toolchain_compile.dir/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task2/main.c.p1 -c /home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task2/main.c",
+  "command": "/opt/microchip/xc32/v4.60/bin/xc32-gcc -DXPRJ_CoolConfig=CoolConfig -D__DEBUG -I/home/vikingur/.mchp_packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include -x c -g -x c -c -mprocessor=ATSAME51J20A -fno-common -mdfp=/home/vikingur/.mchp_packs/Microchip/SAME51_DFP/3.8.253 -o CMakeFiles/Interrupt_CoolConfig_default_XC32_compile.dir/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task2/main.c.o -c /home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task2/main.c",
   "file": "/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task2/main.c",
-  "output": "/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task2/_build/Interrupt/CoolConfig/CMakeFiles/Interrupt_CoolConfig_config_1_toolchain_compile.dir/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task2/main.c.p1"
+  "output": "/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task2/_build/Interrupt/CoolConfig/CMakeFiles/Interrupt_CoolConfig_default_XC32_compile.dir/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task2/main.c.o"
 }
 ]

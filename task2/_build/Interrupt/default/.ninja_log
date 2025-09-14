@@ -1,5 +1,5 @@
 # ninja log v7
 1	284	1757502709149452888	CMakeFiles/Interrupt_default_default_AVR_GCC_compile.dir/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task2/main.c.o	b02ea1c5e7a4983b
 284	303	1757502709432451886	/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task2/out/Interrupt/default.elf	56f794ed56184e04
-3	271	1757503148501249079	build.ninja	e3e62eb7b2942c3b
-3	271	1757503148500249077	/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task2/_build/Interrupt/default/cmake_install.cmake	e3e62eb7b2942c3b
+3	271	1757520316907443565	build.ninja	e3e62eb7b2942c3b
+3	271	1757520316906443522	/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task2/_build/Interrupt/default/cmake_install.cmake	e3e62eb7b2942c3b

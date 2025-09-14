@@ -26,7 +26,9 @@
             "id": "",
             "device": "ATSAME51J20A",
             "imageType": "application",
-            "imagePath": "./out/Interrupt/config_1.elf",
+            "imagePath": "./out/Interrupt/CoolConfig.elf",
+            "toolProperties": "CoolConfig-tool-base",
+            "tool": "PKOB nano",
             "packs": [
                 {
                     "name": "SAME51_DFP",
@@ -40,7 +42,7 @@
                 }
             ],
             "fileSet": "config_1_files",
-            "toolchain": "config_1_toolchain",
+            "toolchain": "default-XC32",
             "preBuildSteps": [],
             "postBuildSteps": []
         }
@@ -93,6 +95,27 @@
             }
         },
         {
+            "name": "default-XC32",
+            "type": "toolchain",
+            "provider": "microchip.toolchains:xc32@4.60",
+            "properties": {}
+        },
+        {
+            "name": "CoolConfig-tool-base",
+            "type": "tool",
+            "properties": {}
+        },
+        {
+            "name": "CoolConfig-tool-base",
+            "type": "tool",
+            "properties": {}
+        },
+        {
+            "name": "CoolConfig-tool-base",
+            "type": "tool",
+            "properties": {}
+        },
+        {
             "name": "default-tool-base",
             "type": "tool",
             "properties": {}
@@ -112,19 +135,15 @@
         {
             "name": "default",
             "files": [
-                {
-                    "include": "**/*",
-                    "exclude": "**/(_build|out|cmake|.vscode)/**/*"
-                }
+                "main.c",
+                "README.md"
             ]
         },
         {
             "name": "config_1_files",
             "files": [
-                {
-                    "include": "**/*",
-                    "exclude": "**/(_build|out|cmake|.vscode)/**/*"
-                }
+                "main.c",
+                "README.md"
             ]
         }
     ]
