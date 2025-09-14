@@ -1,0 +1,26 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch Interrupt: default",
+            "type": "mplab-core-da",
+            "request": "launch",
+            "project": "Interrupt",
+            "configuration": "default",
+            "stopOnEntry": true,
+            "preLaunchTask": "Interrupt: default - Full Build"
+        },
+        {
+            "name": "Launch Interrupt: CoolConfig",
+            "type": "mplab-core-da",
+            "request": "launch",
+            "project": "Interrupt",
+            "configuration": "CoolConfig",
+            "stopOnEntry": true,
+            "preLaunchTask": "Interrupt: CoolConfig - Full Build"
+        }
+    ]
+}

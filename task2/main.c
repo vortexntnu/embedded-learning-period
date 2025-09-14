@@ -5,8 +5,8 @@
  * @brief Main function
  */
 
-
 #include <same51j20a.h>
+
 
 static void nvic_init(void) {
 
@@ -40,6 +40,7 @@ void EIC_init(){
                             |  EIC_CONFIG_SENSE7_FALL;
 
     EIC_REGS->EIC_DEBOUNCEN |= (1<<15);
+    EIC_REGS->EIC_INTENSET |= (1<<15);
     EIC_REGS->EIC_CTRLA |= EIC_CTRLA_ENABLE_Msk;
 }
 
@@ -53,6 +54,7 @@ void pin_init(){
 
 void EIC_EXTINT_15_Handler(){
     PORT_REGS->GROUP[0].PORT_OUTTGL |= (1<<14);
+    EIC_REGS->EIC_INTFLAG |= (1<<15);
 }
 
 int main(){
@@ -60,6 +62,13 @@ int main(){
     GCLK_init();
     EIC_init();
     nvic_init();
+    PORT_REGS->GROUP[0].PORT_OUT &= ~(1<<14);
+
+    PORT_REGS->GROUP[0].PORT_OUTTGL |= (1<<14);
+
+    PORT_REGS->GROUP[0].PORT_OUTTGL |= (1<<14);
+    
+
 
     while(1);
 
