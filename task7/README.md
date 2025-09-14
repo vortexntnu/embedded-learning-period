@@ -99,8 +99,8 @@ void eic_init(void) {
     __DMB();
     __enable_irq();
 
-    NVIC_SetPriority(EIC_IRQn, 3);
-    NVIC_EnableIRQ(EIC_IRQn);
+    NVIC_SetPriority(EIC_EXTINT_15_IRQn, 3);
+    NVIC_EnableIRQ(EIC_EXTINT_15_IRQn);
 }
 
 
