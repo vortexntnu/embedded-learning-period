@@ -120,10 +120,22 @@ void __attribute__((used)) EIC_EXTINT_15_Handler(void) { // Important the functi
     EIC_REGS->INTFLAG = (1 << 15);
 
     // Toggle LED
-    PORT_REGS->GROUP[0].PORT_OUTTGL = (1 << 5);
+    PORT_REGS->GROUP[0].PORT_OUTTGL = (1 << 14);
 }
 ```
 ---
+## Explanation of __attribute__((used))
+
+```c
+__attribute__((used))
+```
+This is a compiler instruction that is used so the compiler does not remove the function.
+When the compiler tries to optimize the code it will remove all unused function. Since interrupt handlers
+are never directly called in the main function, these will often be optmized away.
+To avoid this from happening we have to use **__attribute__((used))** to avoid this from happening
+
+---
+
 ## Optional Challenges
 
 - Use Event Systems instead of EIC to use button interrupt without CPU 
