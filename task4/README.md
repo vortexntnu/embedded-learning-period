@@ -1,4 +1,4 @@
-# Task 4: Capstone Project – Multi-File, Multi-Peripheral Embedded Application
+# Task 4: Final AVR Project – Multi-File, Multi-Peripheral Embedded Application
 
 In larger embedded projects, you often find yourself writing **hundreds or even thousands of lines of code**.  
 If you put everything in a single file, it quickly becomes messy and hard to maintain.  

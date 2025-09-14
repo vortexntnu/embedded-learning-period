@@ -1,0 +1,4 @@
+/Users/rikke/Vortex/embedded-learning-period/task1/My_Project/_build/My_Project/default/CMakeFiles/My_Project_default_default_XC8_compile.dir
+/Users/rikke/Vortex/embedded-learning-period/task1/My_Project/_build/My_Project/default/CMakeFiles/My_Project_default_image_5pvt9hjm.dir
+/Users/rikke/Vortex/embedded-learning-period/task1/My_Project/_build/My_Project/default/CMakeFiles/edit_cache.dir
+/Users/rikke/Vortex/embedded-learning-period/task1/My_Project/_build/My_Project/default/CMakeFiles/rebuild_cache.dir

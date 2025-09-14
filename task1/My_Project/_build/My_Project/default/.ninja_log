@@ -1,0 +1,4 @@
+# ninja log v7
+20	987	1757762846122527693	build.ninja	59cebdc9f06d3bcc
+8	6053	1757511954461282913	CMakeFiles/My_Project_default_default_XC8_compile.dir/Users/rikke/Vortex/embedded-learning-period/task1/My_Project/main.c.o	4c52efd736f452b6
+6064	6538	1757511960517575801	/Users/rikke/Vortex/embedded-learning-period/task1/My_Project/out/My_Project/default.elf	c0574df074b54a5b
