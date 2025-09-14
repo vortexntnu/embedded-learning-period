@@ -50,24 +50,20 @@ Check your development board’s schematics/datasheet to confirm which pins are 
 void eic_init(void) {
 
     /* Selection of the Generator and write Lock for EIC */
-    GCLK_REGS->GCLK_PCHCTRL[2] = GCLK_PCHCTRL_GEN(0x0UL)  | GCLK_PCHCTRL_CHEN_Msk;
+    GCLK_REGS->GCLK_PCHCTRL[4] = GCLK_PCHCTRL_GEN(0x1UL)  | GCLK_PCHCTRL_CHEN_Msk;
 
-    while ((GCLK_REGS->GCLK_PCHCTRL[2] & GCLK_PCHCTRL_CHEN_Msk) != GCLK_PCHCTRL_CHEN_Msk)
+    while ((GCLK_REGS->GCLK_PCHCTRL[4] & GCLK_PCHCTRL_CHEN_Msk) != GCLK_PCHCTRL_CHEN_Msk)
     {
         /* Wait for synchronization */
     }
 
-    // Enable the pullup resistors for PB19
-    PORT_REGS->GROUP[1].PORT_OUT = 0x80000U;
-    PORT_REGS->GROUP[1].PORT_PINCFG[19] = 0x7U;
+    // Enable the pullup resistors for PA15
+    PORT_REGS->GROUP[0].PORT_OUT = ( 1 << 15);
+    PORT_REGS->GROUP[0].PORT_PINCFG[15] = 0x7U; // Enable pullup, input and pmux
+    
+    // Enable output on PA14
+    PORT_REGS->GROUP[0].PORT_DIR = (1 << 14);
 
-    PORT_REGS->GROUP[1].PORT_PMUX[9] = 0x0U;
-
-
-    PORT_REGS->GROUP[2].PORT_DIR = 0x20U;
-    PORT_REGS->GROUP[2].PORT_PINCFG[5] = 0x0U;
-
-    PORT_REGS->GROUP[2].PORT_PMUX[2] = 0x0U;
 
 
 
@@ -87,8 +83,18 @@ void eic_init(void) {
     EIC_REGS->EIC_CONFIG[1] |= EIC_CONFIG_SENSE7_RISE;
 
     /* External Interrupt enable*/
-    EIC_REGS->EIC_INTENSET = 0x8U;
+    EIC_REGS->EIC_INTENSET = (1 << 15);
 
+
+    EIC_REGS->EIC_CTRLA |= (uint8_t)EIC_CTRLA_ENABLE_Msk;
+
+    while((EIC_REGS->EIC_SYNCBUSY & EIC_SYNCBUSY_ENABLE_Msk) == EIC_SYNCBUSY_ENABLE_Msk)
+    {
+        /* Wait for sync */
+    }
+
+
+    NVIC_SetPriorityGrouping(0x00);
 
     __DMB();
     __enable_irq();
@@ -100,6 +106,8 @@ void eic_init(void) {
 
 int main(void) {
     // Initialize EIC
+    
+    CLOCK_Initialize();
     eic_init();
 
     while (1) {
@@ -107,7 +115,7 @@ int main(void) {
     }
 }
 
-void __attribute__((used)) EIC_15_Handler(void) { // Important the function name has to match 
+void __attribute__((used)) EIC_EXTINT_15_Handler(void) { // Important the function name has to match 
     // Clear interrupt flag
     EIC_REGS->INTFLAG = (1 << 15);
 
