@@ -12,6 +12,14 @@ In this task, you will learn how to:
 Since we in task7 will use EIC, I recommend Configuring the clock for EIC (External interrupt controller)
 
 ---
+## Before you read
+
+This example shows clock configuration for the SAMC21 series. However since we under the learning period will use the
+SAMEx series, a **clock.c** file is added under the task6 directory. This file can be copied and used in your code without
+any changes. However peripheral clock still need to be configured. The logic still applies and I would still recommend studying
+the code and explanations below
+
+---
 
 ## 1. Why Clocks Matter
 
