@@ -1,0 +1,5 @@
+/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/_build/Task8/default/CMakeFiles/Task8_default_default_XC32_compile.dir
+/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/_build/Task8/default/CMakeFiles/Task8_default_image_CNTA51lb.dir
+/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/_build/Task8/default/CMakeFiles/Task8_default_Bin2Hex.dir
+/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/_build/Task8/default/CMakeFiles/edit_cache.dir
+/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/_build/Task8/default/CMakeFiles/rebuild_cache.dir

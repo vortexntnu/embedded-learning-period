@@ -80,12 +80,39 @@ build CMakeFiles/task1_default_default_XC8_compile.dir/home/vikingur/Vortex/Embe
   TARGET_COMPILE_PDB = CMakeFiles/task1_default_default_XC8_compile.dir/
   TARGET_PDB = ""
 
+build CMakeFiles/task1_default_default_XC8_compile.dir/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task8/clock.c.o: C_COMPILER__task1_default_default_XC8_compile_unscanned_ /home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task8/clock.c || cmake_object_order_depends_target_task1_default_default_XC8_compile
+  DEFINES = -DDEBUG -DXPRJ_default=default -D__AVR128DA48__ -D__DEBUG=1
+  DEP_FILE = CMakeFiles/task1_default_default_XC8_compile.dir/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task8/clock.c.o.d
+  FLAGS = -c -mcpu=AVR128DA48 -gdwarf-2 -x c -mdfp=/home/vikingur/.mchp_packs/Microchip/AVR-Dx_DFP/2.7.321/xc8 -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -funsigned-char -funsigned-bitfields -Wall -gdwarf-3 -mno-const-data-in-progmem
+  OBJECT_DIR = CMakeFiles/task1_default_default_XC8_compile.dir
+  OBJECT_FILE_DIR = CMakeFiles/task1_default_default_XC8_compile.dir/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task8
+  TARGET_COMPILE_PDB = CMakeFiles/task1_default_default_XC8_compile.dir/
+  TARGET_PDB = ""
+
+build CMakeFiles/task1_default_default_XC8_compile.dir/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task8/main.c.o: C_COMPILER__task1_default_default_XC8_compile_unscanned_ /home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task8/main.c || cmake_object_order_depends_target_task1_default_default_XC8_compile
+  DEFINES = -DDEBUG -DXPRJ_default=default -D__AVR128DA48__ -D__DEBUG=1
+  DEP_FILE = CMakeFiles/task1_default_default_XC8_compile.dir/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task8/main.c.o.d
+  FLAGS = -c -mcpu=AVR128DA48 -gdwarf-2 -x c -mdfp=/home/vikingur/.mchp_packs/Microchip/AVR-Dx_DFP/2.7.321/xc8 -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -funsigned-char -funsigned-bitfields -Wall -gdwarf-3 -mno-const-data-in-progmem
+  OBJECT_DIR = CMakeFiles/task1_default_default_XC8_compile.dir
+  OBJECT_FILE_DIR = CMakeFiles/task1_default_default_XC8_compile.dir/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task8
+  TARGET_COMPILE_PDB = CMakeFiles/task1_default_default_XC8_compile.dir/
+  TARGET_PDB = ""
+
+build CMakeFiles/task1_default_default_XC8_compile.dir/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task8/sercom.c.o: C_COMPILER__task1_default_default_XC8_compile_unscanned_ /home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task8/sercom.c || cmake_object_order_depends_target_task1_default_default_XC8_compile
+  DEFINES = -DDEBUG -DXPRJ_default=default -D__AVR128DA48__ -D__DEBUG=1
+  DEP_FILE = CMakeFiles/task1_default_default_XC8_compile.dir/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task8/sercom.c.o.d
+  FLAGS = -c -mcpu=AVR128DA48 -gdwarf-2 -x c -mdfp=/home/vikingur/.mchp_packs/Microchip/AVR-Dx_DFP/2.7.321/xc8 -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -funsigned-char -funsigned-bitfields -Wall -gdwarf-3 -mno-const-data-in-progmem
+  OBJECT_DIR = CMakeFiles/task1_default_default_XC8_compile.dir
+  OBJECT_FILE_DIR = CMakeFiles/task1_default_default_XC8_compile.dir/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task8
+  TARGET_COMPILE_PDB = CMakeFiles/task1_default_default_XC8_compile.dir/
+  TARGET_PDB = ""
+
 
 
 #############################################
 # Object library task1_default_default_XC8_compile
 
-build task1_default_default_XC8_compile: phony CMakeFiles/task1_default_default_XC8_compile.dir/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task1/main.c.o CMakeFiles/task1_default_default_XC8_compile.dir/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task2/main.c.o CMakeFiles/task1_default_default_XC8_compile.dir/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task5/main.c.o CMakeFiles/task1_default_default_XC8_compile.dir/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task6/clock.c.o
+build task1_default_default_XC8_compile: phony CMakeFiles/task1_default_default_XC8_compile.dir/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task1/main.c.o CMakeFiles/task1_default_default_XC8_compile.dir/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task2/main.c.o CMakeFiles/task1_default_default_XC8_compile.dir/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task5/main.c.o CMakeFiles/task1_default_default_XC8_compile.dir/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task6/clock.c.o CMakeFiles/task1_default_default_XC8_compile.dir/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task8/clock.c.o CMakeFiles/task1_default_default_XC8_compile.dir/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task8/main.c.o CMakeFiles/task1_default_default_XC8_compile.dir/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task8/sercom.c.o
 
 # =============================================================================
 # Object build statements for EXECUTABLE target task1_default_image_SrAKr2Uf
@@ -104,7 +131,7 @@ build cmake_object_order_depends_target_task1_default_image_SrAKr2Uf: phony || c
 #############################################
 # Link the executable /home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/out/task1/default.elf
 
-build /home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/out/task1/default.elf: C_EXECUTABLE_LINKER__task1_default_image_SrAKr2Uf_ CMakeFiles/task1_default_default_XC8_compile.dir/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task1/main.c.o CMakeFiles/task1_default_default_XC8_compile.dir/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task2/main.c.o CMakeFiles/task1_default_default_XC8_compile.dir/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task5/main.c.o CMakeFiles/task1_default_default_XC8_compile.dir/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task6/clock.c.o || task1_default_default_XC8_compile
+build /home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/out/task1/default.elf: C_EXECUTABLE_LINKER__task1_default_image_SrAKr2Uf_ CMakeFiles/task1_default_default_XC8_compile.dir/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task1/main.c.o CMakeFiles/task1_default_default_XC8_compile.dir/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task2/main.c.o CMakeFiles/task1_default_default_XC8_compile.dir/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task5/main.c.o CMakeFiles/task1_default_default_XC8_compile.dir/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task6/clock.c.o CMakeFiles/task1_default_default_XC8_compile.dir/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task8/clock.c.o CMakeFiles/task1_default_default_XC8_compile.dir/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task8/main.c.o CMakeFiles/task1_default_default_XC8_compile.dir/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task8/sercom.c.o || task1_default_default_XC8_compile
   LINK_FLAGS = -Wl,-Map=mem.map -mcpu=AVR128DA48 -Wl,--defsym=__MPLAB_BUILD=1 -mdfp=/home/vikingur/.mchp_packs/Microchip/AVR-Dx_DFP/2.7.321/xc8 -gdwarf-2 -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -funsigned-char -funsigned-bitfields -Wall -gdwarf-3 -mno-const-data-in-progmem -Wl,--memorysummary,memoryfile.xml -Wl,--defsym=__MPLAB_DEBUG=1,--defsym=__DEBUG=1
   OBJECT_DIR = CMakeFiles/task1_default_image_SrAKr2Uf.dir
   POST_BUILD = :

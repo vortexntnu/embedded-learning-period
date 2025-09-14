@@ -1,0 +1,20 @@
+[
+{
+  "directory": "/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task8/_build/Task8/default",
+  "command": "/opt/microchip/xc32/v4.60/bin/xc32-gcc -DXPRJ_default=default -D__DEBUG -I/home/vikingur/.mchp_packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include -x c -g -x c -c -mprocessor=ATSAME51J20A -fno-common -mdfp=/home/vikingur/.mchp_packs/Microchip/SAME51_DFP/3.8.253 -o CMakeFiles/Task8_default_default_XC32_compile.dir/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task8/clock.c.o -c /home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task8/clock.c",
+  "file": "/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task8/clock.c",
+  "output": "/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task8/_build/Task8/default/CMakeFiles/Task8_default_default_XC32_compile.dir/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task8/clock.c.o"
+},
+{
+  "directory": "/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task8/_build/Task8/default",
+  "command": "/opt/microchip/xc32/v4.60/bin/xc32-gcc -DXPRJ_default=default -D__DEBUG -I/home/vikingur/.mchp_packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include -x c -g -x c -c -mprocessor=ATSAME51J20A -fno-common -mdfp=/home/vikingur/.mchp_packs/Microchip/SAME51_DFP/3.8.253 -o CMakeFiles/Task8_default_default_XC32_compile.dir/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task8/main.c.o -c /home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task8/main.c",
+  "file": "/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task8/main.c",
+  "output": "/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task8/_build/Task8/default/CMakeFiles/Task8_default_default_XC32_compile.dir/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task8/main.c.o"
+},
+{
+  "directory": "/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task8/_build/Task8/default",
+  "command": "/opt/microchip/xc32/v4.60/bin/xc32-gcc -DXPRJ_default=default -D__DEBUG -I/home/vikingur/.mchp_packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include -x c -g -x c -c -mprocessor=ATSAME51J20A -fno-common -mdfp=/home/vikingur/.mchp_packs/Microchip/SAME51_DFP/3.8.253 -o CMakeFiles/Task8_default_default_XC32_compile.dir/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task8/sercom.c.o -c /home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task8/sercom.c",
+  "file": "/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task8/sercom.c",
+  "output": "/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task8/_build/Task8/default/CMakeFiles/Task8_default_default_XC32_compile.dir/home/vikingur/Vortex/Embedded/Oppstart/embedded-learning-period/task8/sercom.c.o"
+}
+]
