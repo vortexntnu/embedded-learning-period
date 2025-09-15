@@ -5,7 +5,7 @@ Congratulations! You’ve made it to the **final task** of the learning period.
 By now, you’ve learned the fundamentals of embedded C, worked with registers directly, and experimented with various peripherals on both AVR and SAM microcontrollers.  
 
 One important part of learning is **“reinventing the wheel”** — writing low-level drivers yourself, so you really understand what’s happening under the hood.  
-But in real-world projects, some peripherals (like CAN, I²C, and DMA) are **too complex to reinvent every time**.  
+But in real-world projects, some peripherals (like CAN, I²C, and DMA) are **too complex to reinvent every time**. 
 
 That’s where vendor-supplied libraries come in. Microchip provides **PLIB (Peripheral Libraries)** as part of the **MPLAB Harmony framework**. These give you pre-written drivers for most SAM peripherals, so you can focus on application logic rather than register fiddling.
 
@@ -20,6 +20,17 @@ That’s where vendor-supplied libraries come in. Microchip provides **PLIB (Per
 Browse these repositories to see **working examples** of different peripherals. You’ll often find ready-made drivers and example code that you can adapt to your project.
 
 ---
+
+# Before you start
+
+The whole point of this task is to try to "patch" together multiple examples from the repositories listed above. One common issue is that the example project
+works perfectly. However trying to copy the exact same code it does not work. Here it is important to recall the task 6, clock configuration is
+often the cause here. All it takes one enable bit to be toggled off for nothing to work. One could easily forget something as simple as NVIC to enable
+interrupts.
+
+Unfortunately chat does not really do a good job on the SAM series microcontrollers. Trying to rely to much on chat here will result in a lot of time wasted.
+
+Use the examples for all they are worth, there is a lot of learning to take place here. Good luck!
 
 # Task 8 
 
@@ -73,7 +84,6 @@ You will **design and implement a small project** that combines:
 ##  Bonus Challenges
 
 - Use **DMA** to transfer data automatically (e.g., ADC → memory → USART).  
-- Implement a **command parser** (e.g., “SET PWM 50” in USART changes LED duty cycle).  
 - Combine **three peripherals** instead of two.  
 - Add **error handling** (timeouts, invalid input).  
 - Document your project in a short `README.md` inside your task folder, explaining what you built.
@@ -88,4 +98,4 @@ By completing this task, you will:
 - Build something closer to what you would implement in a **real AUV subsystem**.  
 - Gain confidence in reading vendor examples, adapting code, and debugging.  
 
-This is your chance to **be creative** and make something cool that shows off everything you’ve learned in the embedded learning period. 🚀
+This is your chance to **be creative** and make something cool that shows off everything you’ve learned in the embedded learning period. 
