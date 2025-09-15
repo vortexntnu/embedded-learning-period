@@ -43,7 +43,7 @@ You will **design and implement a small project** that combines:
 
 ## Suggested Project Ideas
 
-- **USART + PWM**  
+- **USART + PWM(TCC)**  (recommended)
   Control an LED’s brightness (PWM duty cycle) by sending commands over the serial terminal.
 
 - **I²C + ADC**  
