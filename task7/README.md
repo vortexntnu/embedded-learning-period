@@ -121,17 +121,24 @@ void __attribute__((used)) EIC_EXTINT_15_Handler(void) { // Important the functi
 }
 ```
 ---
-## Explanation of __attribute__((used))
+
+## Explanation of `__attribute__((used))`
 
 ```c
 __attribute__((used))
 ```
-This is a compiler instruction that is used so the compiler does not remove the function.
-When the compiler tries to optimize the code it will remove all unused function. Since interrupt handlers
-are never directly called in the main function, these will often be optmized away.
-To avoid this from happening we have to use **__attribute__((used))** to avoid this from happening
+
+This is a **compiler attribute** that tells the compiler *not to remove a symbol during optimization*, even if it looks unused.
+
+Normally, when the compiler optimizes code, it will **discard any functions or variables that aren’t directly referenced**. This is a problem for things like **interrupt service routines (ISRs)**, because they are never called directly in `main()`. Instead, they are called by the hardware when an interrupt fires.
+
+Without this attribute, the compiler may decide an ISR is “unused” and optimize it away, leaving you with an interrupt that never triggers.
+
+By adding `__attribute__((used))`, we **force the compiler to keep the function in the final binary**, ensuring that your interrupt handlers are still available at runtime.
 
 ---
+
+Would you like me to also add a **side-by-side example** (one ISR with and one without the attribute, showing the compiler dropping it in disassembly) so students *see* why this is necessary?
 
 ## Optional Challenges
 
