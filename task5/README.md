@@ -81,11 +81,11 @@ This difference reflects the increased **complexity and flexibility** of ARM-bas
 
 ---
 
-## 3. Exercise – LED Blink on ATSAM
+## 3. Exercise – LED Blink on SAME51J20A
 
 Your task:
 
-1. Configure **PA5** as an output.
+1. Configure **PA14** as an output.
 2. Write code to turn the LED on and off with a delay.
 3. Verify that the LED blinks at about 1 Hz.
 
@@ -101,15 +101,15 @@ void delay(volatile uint32_t count) {
 
 int main(void) {
     // 1. Set PA5 as output
-    PORT_REGS->GROUP[0].PORT_DIR |= (1 << 5);
+    PORT_REGS->GROUP[0].PORT_DIR |= (1 << 14);
 
     while (1) {
         // 2. Turn LED on
-        PORT_REGS->GROUP[0].PORT_OUT |= (1 << 5);
+        PORT_REGS->GROUP[0].PORT_OUT |= (1 << 14);
         delay(100000);
 
         // 3. Turn LED off
-        PORT_REGS->GROUP[0].PORT_OUT &= ~(1 << 5);
+        PORT_REGS->GROUP[0].PORT_OUT &= ~(1 << 14);
         delay(100000);
     }
 }
