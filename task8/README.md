@@ -23,14 +23,15 @@ Browse these repositories to see **working examples** of different peripherals. 
 
 # Before you start
 
-The whole point of this task is to try to "patch" together multiple examples from the repositories listed above. One common issue is that the example project
-works perfectly. However trying to copy the exact same code it does not work. Here it is important to recall the task 6, clock configuration is
-often the cause here. All it takes one enable bit to be toggled off for nothing to work. One could easily forget something as simple as NVIC to enable
-interrupts.
+The idea behind this task is to **patch together multiple examples** from the repositories linked above.
 
-Unfortunately chat does not really do a good job on the SAM series microcontrollers. Trying to rely to much on chat here will result in a lot of time wasted.
+A common frustration is that the example project works perfectly, but the moment you copy the exact same code into your own project… nothing happens. Nine times out of ten, this comes down to something you saw back in **Task 6 (clock configuration)**. All it takes is **one missing enable bit** for the whole thing to fail. Don’t forget things like enabling the **NVIC** for interrupts — it’s easy to overlook the small details.
 
-Use the examples for all they are worth, there is a lot of learning to take place here. Good luck!
+Also, a word of warning: tools like ChatGPT don’t do a great job with SAM-series microcontrollers. If you lean too heavily on it, you’ll probably waste more time than you save. Stick to the **official examples and datasheets** — they’re your best friends here.
+
+So, use the examples for all they’re worth. Experiment, break things, fix them again. There’s a ton of learning hidden in this step. **Good luck!** 
+
+---
 
 # Task 8 
 
