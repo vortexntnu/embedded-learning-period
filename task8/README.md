@@ -45,7 +45,7 @@ You will **design and implement a small project** that combines:
    - CAN  (Very difficult)
 
 2. **At least one additional peripheral**, such as:  
-   - Timer/Counter (e.g., PWM generation or periodic interrupts)  
+   - Timer/Counter (e.g., PWM generation or periodic interrupts)  (recommended)
    - ADC (analog sensor input)  
    - DAC (waveform generation)  
    - GPIO (LED/button control)  
