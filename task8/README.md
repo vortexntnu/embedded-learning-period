@@ -53,6 +53,15 @@ You will **design and implement a small project** that combines:
 
 ---
 
+## Which SERCOM channel to use for USART on each MCU
+
+- SAME51J20A
+    - SERCOM5
+- SAME54
+    - SERCOM2
+- SAMC21
+    - SERCOM4
+
 ## Suggested Project Ideas
 
 - **USART + PWM(TCC)**  (recommended)
