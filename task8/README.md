@@ -91,6 +91,12 @@ You will **design and implement a small project** that combines:
 
 ---
 
+## Common pitfalls
+
+
+The examples often rename the interrupt functions. If the example contains a ISR with InterruptHandler in the name
+remove "Interrupt" from the name so only Handler is left.
+
 ##  Bonus Challenges
 
 - Use **DMA** to transfer data automatically (e.g., ADC → memory → USART).  
